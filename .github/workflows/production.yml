@@ -1,0 +1,12 @@
+name: Deploy Website
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploy to Production
+    runs-on: [self-hosted, Linux, X64]
+    steps:
+      - name: Trigger Deployment
+        run: /usr/local/bin/deploy-my-website

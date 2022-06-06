@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+
+╔═╗┌─┐┌┬┐┌─┐┬─┐  ╔═╗┌─┐┬ ┬┌┬┐┌─┐┬  ┌─┐┌─┐┬  ┌┬┐┌┬┐
+╠═╝├┤  │ ├┤ ├┬┘  ╚═╗│  ├─┤│││├─┤│  ├┤ ├┤ │   ││ │
+╩  └─┘ ┴ └─┘┴└─  ╚═╝└─┘┴ ┴┴ ┴┴ ┴┴─┘└  └─┘┴─┘─┴┘ ┴
+
+CERTIFIED SENIOR SALESFORCE COMMERCE CLOUD DEVELOPER
+
+-->
+<html dir="ltr" lang="en-US">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Mobile Specific Meta Tags -->
+        <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Manifest">
+        <meta name="application-name" content="Manifest">
+        <meta name="theme-color" content="#0c1832">
+
+        <title>{{ title }}</title>
+
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywords }}">
+        <meta name="cache-control" content="public">
+        <meta name="company" content="Peter Schmalfeldt">
+        <meta name="googlebot" content="noindex,nofollow">
+        <meta name="robots" content="noodp,noydir">
+        <meta name="robots" content="noindex,nofollow">
+
+        <!-- Twitter META Info -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:site" content="@mrmidi">
+        <meta property="twitter:title" content="{{ title }}">
+        <meta property="twitter:description" content="{{ description }}">
+        <meta property="twitter:creator" content="@mrmidi">
+        <meta property="twitter:image" content="{{ package.base }}{{ card_image }}">
+        <meta property="twitter:image:alt" content="{{ title }}">
+        <meta property="twitter:domain" content="{{ package.base }}">
+
+        <!-- Open Graph protocol -->
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:url" content="{{ package.base }}{{ canonical }}">
+        <meta property="og:image" content="{{ package.base }}{{ card_image }}">
+        <meta property="og:site_name" content="Peter Schmalfeldt">
+        <meta property="og:description" content="{{ description }}">
+
+        <!-- Dublin Core Metadata -->
+        <meta name="dc:language" content="en_US">
+        <meta name="dc:title" content="{{ title }}">
+        <meta name="dc:source" content="{{ package.base }}/">
+
+        <!-- Manifest -->
+        <link rel="manifest" href="/manifest.json" />
+
+        <!-- Icons -->
+        <link rel="icon" type="image/png" href="{{ package.assetPath }}images/favicon.ico">
+        <link rel="apple-touch-icon" href="{{ package.assetPath }}images/apple/icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ package.assetPath }}images/apple/icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ package.assetPath }}images/apple/icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ package.assetPath }}images/apple/icon-144x144.png">
+
+        <!-- Canonical -->
+        <link rel="canonical" href="{{ package.base }}{{ canonical }}">
+
+        <style>
+        body, html {
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        </style>
+    </head>
+    <body>
+        {{> body}}
+    </body>
+</html>

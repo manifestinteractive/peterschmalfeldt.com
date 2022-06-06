@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+npm-debug.log
+.sass-cache
+dist
+aws.json
+*.code-workspace
+src/assets/pdf/*.docx
+!.nvmrc
+!website.code-workspace

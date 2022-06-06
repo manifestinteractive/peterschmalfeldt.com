@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+
+╔═╗┌─┐┌┬┐┌─┐┬─┐  ╔═╗┌─┐┬ ┬┌┬┐┌─┐┬  ┌─┐┌─┐┬  ┌┬┐┌┬┐
+╠═╝├┤  │ ├┤ ├┬┘  ╚═╗│  ├─┤│││├─┤│  ├┤ ├┤ │   ││ │
+╩  └─┘ ┴ └─┘┴└─  ╚═╝└─┘┴ ┴┴ ┴┴ ┴┴─┘└  └─┘┴─┘─┴┘ ┴
+
+CERTIFIED SENIOR SALESFORCE COMMERCE CLOUD DEVELOPER
+
+-->
+<html dir="ltr" lang="en-US">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Mobile Specific Meta Tags -->
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Manifest">
+    <meta name="application-name" content="Manifest">
+    <meta name="theme-color" content="#0c1832">
+
+    <title>{{ title }}</title>
+
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{{ keywords }}">
+    <meta name="cache-control" content="public">
+    <meta name="company" content="Peter Schmalfeldt">
+    <meta name="googlebot" content="{{ package.robots }}">
+    <meta name="bingbot" content="{{ package.robots }}">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="robots" content="{{ package.robots }}">
+
+    <!-- Twitter META Info -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@mrmidi">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta property="twitter:description" content="{{ description }}">
+    <meta property="twitter:creator" content="@mrmidi">
+    <meta property="twitter:image" content="{{ package.base }}{{ card_image }}">
+    <meta property="twitter:image:alt" content="{{ title }}">
+    <meta property="twitter:domain" content="{{ package.base }}">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:locale" name="locale" content="en_US">
+    <meta property="og:type" name="type" content="website">
+    <meta property="og:title" name="title" content="{{ title }}">
+    <meta property="og:url" name="url" content="{{ package.base }}{{ canonical }}">
+    <meta property="og:image" name="image" content="{{ package.base }}{{ card_image }}">
+    <meta property="og:site_name" name="site_name" content="Peter Schmalfeldt">
+    <meta property="og:description" name="description" content="{{ description }}">
+
+    <!-- Dublin Core Metadata -->
+    <meta name="dc:language" content="en_US">
+    <meta name="dc:title" content="{{ title }}">
+    <meta name="dc:source" content="{{ package.base }}/">
+
+    <!-- Profile Schema -->
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="{{ package.assetPath }}images/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ package.assetPath }}images/apple/icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ package.assetPath }}images/apple/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ package.assetPath }}images/apple/icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ package.assetPath }}images/apple/icon-144x144.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ package.base }}{{ canonical }}">
+
+    <!-- Short Link -->
+    <link rel="shortlink" href="{{ package.base }}" />
+
+    <!-- OEmbed Support -->
+    <link rel="alternate" type="application/json+oembed" href="{{ package.base }}/oembed.json" />
+    <link rel="alternate" type="text/xml+oembed" href="{{ package.base }}/oembed.xml" />
+
+    <!-- Minimal CSS to prevent blocking page load -->
+    <style>
+    .pageloader {display:none;}body.loading .pageloader{display:flex;justify-content:center;position:fixed;top:0;left:0;height:100%;width:100%;z-index:100000;overflow:hidden;pointer-events:none;background-color:#FFFFFF;transform:translateZ(1px);}.pageloader svg{width:100%;max-width:250px;transform:translateZ(1px);}#icon-rexy{transform:translate3d(40px, 0, 1px);animation: rexyIcon 0.15s ease-in forwards;}@keyframes rexyIcon {from {transform:translate3d(40px, 0, 1px)} to {transform:translate3d(0, 0, 1px)}}
+    @media (prefers-color-scheme: dark) {html,body{background-color: #0c1832;}body.loading .pageloader{background-color: #0c1832;}}
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ package.assetPath }}css/plugins.{{ package.version }}.min.css{{ package.cacheBreak }}">
+    <link rel="stylesheet" href="{{ package.assetPath }}css/app.{{ package.version }}.min.css{{ package.cacheBreak }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ package.analytics }}"></script>
+
+    <!-- Show GDPR if Outside America -->
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}function acceptGDPR(){window.gdprConcent=true;localStorage.setItem('gdprConcent','yes');document.documentElement.classList.remove('gdpr-required');initializeGoogleAnalytics();}function declineGDPR(){window.gdprConcent=false;localStorage.setItem('gdprConcent','no');document.documentElement.classList.remove('gdpr-required');}function initializeGoogleAnalytics(){gtag('js',new Date());gtag('config','{{ package.analytics }}');}window.gdprConcent=false;var timezone=(Intl&&typeof Intl.DateTimeFormat==='function')?Intl.DateTimeFormat().resolvedOptions().timeZone:null;if(typeof(localStorage)!=='undefined'){window.gdprConcent=localStorage.getItem('gdprConcent');}if((timezone&&timezone.startsWith('America'))||window.gdprConcent==='yes'){initializeGoogleAnalytics();}else{document.documentElement.classList.add('gdpr-required');}</script>
+  </head>
+  <body class="loading">
+    <a class="skip-to-content-link" href="#main-wrapper" role="button" data-track data-category="Nav" data-action="Header" data-label="Skip to Main Content">
+      Skip to Main Content
+    </a>
+
+    {{> pageloader}}
+
+    {{> gdpr}}
+
+    <main>
+      <h1 class="sr-only">{{ title }}</h1>
+
+      <!-- Page Wrapper -->
+      <div id="page-wrapper">
+        {{> header}}
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper">
+
+          <!-- Main Wrapper -->
+          <div id="main-wrapper">
+            {{> body}}
+            {{> jsonld}}
+          </div>
+          <!-- Main Wrapper Ends -->
+
+          {{> footer}}
+        </div>
+        <!-- Content Wrapper Ends -->
+      </div>
+      <!-- Page Wrapper Ends -->
+    </main>
+
+    {{> unsupported-browser}}
+
+    <button id="back-to-top" aria-label="Back to Top" data-track data-category="Nav" data-action="Footer" data-label="Back to Top"></button>
+
+    <!-- Scripts -->
+    <script>var PS_ENV = '{{ package.env }}';</script>
+    <script defer src="{{ package.assetPath }}js/plugins.{{package.version}}.min.js{{ package.cacheBreak }}"></script>
+    <script defer src="{{ package.assetPath }}js/app.{{package.version}}.min.js{{ package.cacheBreak }}"></script>
+    <script>
+      // Check for Unsupported Browsers
+      if (window.document.documentMode) {
+        document.getElementById('unsupported-browser').style.display = 'block';
+        document.getElementById('loading-wrapper').style.display = 'none';
+        document.getElementById('page-wrapper').style.display = 'none';
+        document.getElementById('back-to-top').style.display = 'none';
+        // Redirect to Unsupported Browser Page
+      } else if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+      }
+    </script>
+  </body>
+</html>

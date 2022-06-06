@@ -1,0 +1,58 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+    "window.title": "My Website${separator}${activeEditorShort}",
+		"cSpell.words": [
+      "allowfullscreen",
+      "animationtype",
+      "bingbot",
+      "breadcrumblist",
+      "browserslist",
+      "captionanimation",
+      "changefreq",
+      "checkmark",
+      "cubeportfolio",
+      "eCommerce",
+      "foss",
+      "gaphorizontal",
+      "gapi",
+      "gapvertical",
+      "googlebot",
+      "grecaptcha",
+      "gtag",
+      "gulpfile",
+      "htmllint",
+      "iframe",
+      "ionicons",
+      "itemscope",
+      "itemtype",
+      "jsonld",
+      "lastmod",
+      "layoutmode",
+      "loadmoreaction",
+      "mrmidi",
+      "noodp",
+      "noydir",
+      "oembed",
+      "overscroll",
+      "pageloader",
+      "panani",
+      "panini",
+      "peterschmalfeldt",
+      "postprocessor",
+      "postversion",
+      "preversion",
+      "recaptcha",
+      "rexi",
+      "rexy",
+      "scriptshelp",
+      "shortlink",
+      "sitekey",
+      "syngenta"
+    ]
+	}
+}
