@@ -265,7 +265,8 @@ gulp.task('lint-html', (done) => {
       'spec-char-escape': false,
       'tag-bans': [],
       'tag-close': true,
-      'tag-name-match': true
+      'tag-name-match': true,
+      'title-max-len': 70
     }
   }
 

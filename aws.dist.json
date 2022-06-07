@@ -1,6 +1,0 @@
-{
-  "accessKeyId": "RVW_AWS_S3_ACCESS_KEY",
-  "secretAccessKey": "RVW_AWS_S3_ACCESS_SECRET",
-  "s3BucketId": "RVW_AWS_S3_BUCKET_ID",
-  "s3BucketPolicy": "RVW_AWS_S3_BUCKET_POLICY"
-}
