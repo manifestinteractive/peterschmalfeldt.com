@@ -266,7 +266,7 @@ gulp.task('lint-html', (done) => {
       'tag-bans': [],
       'tag-close': true,
       'tag-name-match': true,
-      'title-max-len': 70
+      'title-max-len': 80
     }
   }
 
@@ -291,3 +291,4 @@ gulp.task('watch', (done) => {
 // Main Gulp Tasks
 gulp.task('build', gulp.series('clean', 'copy', 'compile-js', 'compile-css', 'copy-js', 'compile-scss', 'compile-html', 'copy-images', 'compile-sw'))
 gulp.task('default', gulp.series('build', 'watch', 'server'))
+

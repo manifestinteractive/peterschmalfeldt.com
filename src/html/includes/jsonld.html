@@ -1,137 +1,140 @@
 <!-- JSON+LD Data -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "{{ package.base }}/#website",
-      "url": "{{ package.base }}/",
-      "name": "Peter Schmalfeldt",
-      "description": "Peter Schmalfeldt is a Certified Senior Salesforce Commerce Cloud Developer and has built eCommerce Web Applications for over twenty years.",
-      "publisher": {
-        "@id": "{{ package.base }}/#organization"
-      },
-      "inLanguage": "en-US"
-    },
+  "@context": "http://www.schema.org",
+  "@type": "Person",
+  "@id": "{{ package.base }}/#person",
+  "url": "{{ package.base }}",
+  "name": "Peter Schmalfeldt",
+  "givenName": "Peter",
+  "familyName": "Schmalfeldt",
+  "nationality": "American",
+  "birthDate": "1977-11-24",
+  "gender": "Male",
+  "email": "me@peterschmalfeldt.com",
+  "telephone": "+1-314-920-9201",
+  "image": "https://s.gravatar.com/avatar/3595f3b6d16773401a09655a6701b5afd1db1c2a355baabbe4d66379bf349886?s=512&r=g",
+  "jobTitle": "Senior Full Stack Engineer, SFCC Expert & AI Specialist",
+  "description": "Senior Full Stack Engineer with 25+ years of experience in web development, Salesforce Commerce Cloud (SFCC), and AI automation. Specializing in scalable e-commerce solutions, custom software development, and AI-driven automation.",
+  "knowsAbout": [
+    "Full Stack Development",
+    "Salesforce Commerce Cloud",
+    "E-commerce Solutions",
+    "AI and Machine Learning",
+    "Web Development",
+    "DevOps",
+    "Cloud Computing",
+    "Chatbots",
+    "Custom Software Development"
+  ],
+  "skills": [
+    "Agentic AI",
+    "AI",
+    "Angular",
+    "APIs",
+    "Attention to detail",
+    "AWS",
+    "Azure",
+    "Azure Machine Learning",
+    "Back-end development",
+    "Bash",
+    "CI/CD",
+    "CircleCI",
+    "Computer vision",
+    "DevOps",
+    "Docker",
+    "E-commerce",
+    "Elasticsearch",
+    "Front-end development",
+    "Full-stack development",
+    "Generative AI",
+    "GitHub",
+    "JavaScript",
+    "Management",
+    "Model evaluation",
+    "Model training",
+    "Model Tuning",
+    "MySQL",
+    "Natural language processing",
+    "Next.js",
+    "Node.js",
+    "OpenAI",
+    "OpenCV",
+    "Organizational skills",
+    "PHP",
+    "PostgreSQL",
+    "Problem solving",
+    "Progressive Web Apps",
+    "Python",
+    "PyTorch",
+    "React",
+    "Redis",
+    "Salesforce Commerce Cloud",
+    "Salesforce Reference Architecture",
+    "SQLite",
+    "TensorFlow",
+    "TypeScript",
+    "Verbal Communication",
+    "Vue.js"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "me@peterschmalfeldt.com",
+    "contactType": "Customer Support"
+  },
+  "birthPlace": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "United States",
+      "addressLocality": "Gig Harbor",
+      "addressRegion": "WA",
+      "postalCode": "98335"
+    }
+  },
+  "award": [
+    "Salesforce Certified AI Associate",
+    "Salesforce B2C Commerce Developer Certification"
+  ],
+  "affiliation": [
     {
       "@type": "Organization",
-      "@id": "{{ package.base }}/#organization",
-      "name": "Peter Schmalfeldt",
-      "url": "{{ package.base }}",
+      "name": "Manifest Interactive",
       "sameAs": [
-        "https://twitter.com/mrmidi",
-        "http://www.linkedin.com/in/peter-schmalfeldt",
-        "https://github.com/manifestinteractive"
-      ],
-      "logo": {
-        "@type": "ImageObject",
-        "@id": "{{ package.base }}/#logo",
-        "inLanguage": "en-US",
-        "url": "{{ package.base }}/assets/images/icon-512x512.png",
-        "contentUrl": "{{ package.base }}/assets/images/icon-512x512.png",
-        "width": 512,
-        "height": 512,
-        "caption": "Peter Schmalfeldt"
-      },
-      "image": {
-        "@id": "{{ package.base }}/#logo"
-      }
-    },
-    {
-      "@type": "LocalBusiness",
-      "parentOrganization": {
-        "name": "Peter Schmalfeldt"
-      },
-      "name": "Peter Schmalfeldt",
-      "url": "{{ package.base }}",
-      "image": "{{ package.base }}/assets/images/card.png",
-      "logo": "{{ package.base }}/assets/images/icon-512x512.png",
-      "priceRange": "N/A",
-      "description": "Peter Schmalfeldt is a Certified Senior Salesforce Commerce Cloud Developer and has built eCommerce Web Applications for over twenty years.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "200 2nd Avenue South St. Petersburg, FL 33701 USA",
-        "addressLocality": "St. Petersburg",
-        "addressRegion": "FL 33701",
-        "telephone": "Visit our Website"
-      },
-      "hasMap": "https://www.google.com/maps/place/200+2nd+Ave+S,+St.+Petersburg,+FL+33701/@27.7691621,-82.6379562,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2e19b65c2fbe1:0xf890c3605110bf39!8m2!3d27.7691621!4d-82.6357675"
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Salesforce Commerce Cloud",
-      "provider": {
-        "@type": "Corporation",
-        "name": "Peter Schmalfeldt"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Certified Senior Salesforce Commerce Cloud Developer",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Custom Integrations",
-              "description": "I've helped with everything from building custom cartridges to developing new complex features. I have extensive experience with highly requested integrations like BOPIS, Curbside Pickup, and Same Day Delivery."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "International Sites",
-              "description": "I am familiar with international sites and the special considerations needed to support them, whether it's different data requirements per country or even data entry handling with double-byte characters."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Business Manager",
-              "description": "In addition to the basics like Content Slots / Assets, I've also got years of experience with Custom / System Objects, Imports / Exports, Jobs, etc., and I can guide your team with transitioning to On-Demand Sandboxes."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Storefront",
-              "description": "I have two decades of experience building websites that are both performant and accessible on desktop and mobile devices. I've also been developing node.js based applications for over a decade, which SFRA uses."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "{{ package.base }}{{ canonical }}#webpage",
-      "url": "{{ package.base }}{{ canonical }}",
-      "name": "{{ title }}",
-      "description": "{{ description }}",
-      "inLanguage": "en-US",
-      "isPartOf": {
-        "@id": "{{ package.base }}/#website"
-      },
-      "breadcrumb": {
-        "@id": "{{ package.base }}{{ canonical }}/#breadcrumb"
-      },
-      "author": "{{ package.base }}/#author",
-      "creator": "{{ package.base }}/#author",
-      "image": {
-        "@type": "ImageObject",
-        "@id": "{{ package.base }}/#mainImage",
-        "url": "{{ card_image }}",
-        "width": "640",
-        "height": "320"
-      },
-      "primaryImageOfPage": {
-        "@id": "{{ package.base }}/#mainImage"
-      },
-      "datePublished": "2022-05-30T06:07:43.283Z",
-      "dateModified": "{{ package.publishedDate }}"
+        "https://manifestinteractive.com"
+      ]
     }
+  ],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Webster University",
+      "sameAs": "https://www.webster.edu"
+    }
+  ],
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Patagonia",
+      "sameAs": [
+        "https://www.patagonia.com",
+        "https://x.com/patagonia",
+        "https://www.instagram.com/patagonia",
+        "https://www.linkedin.com/company/patagonia_2"
+      ]
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "United States",
+    "addressLocality": "Gig Harbor",
+    "addressRegion": "WA",
+    "postalCode": "98335"
+  },
+  "sameAs": [
+    "https://trailblazer.me/id/peter-schmalfeldt",
+    "https://www.linkedin.com/in/peter-schmalfeldt",
+    "https://github.com/manifestinteractive"
   ]
 }
 </script>

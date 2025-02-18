@@ -1,9 +1,9 @@
 {
   "app_name": "Schmalfeldt",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "background_color": "#0c1832",
   "categories": ["business", "personalization", "productivity", "utilities"],
-  "description": "Peter Schmalfeldt is a Certified Senior Salesforce Commerce Cloud Developer and has built eCommerce Web Applications for over twenty years.",
+  "description": "Senior Full Stack Engineer with 25+ years of experience in web development, Salesforce Commerce Cloud (SFCC), and AI automation. Specializing in scalable e-commerce solutions, custom software development, and AI-driven automation.",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
   "icons": [

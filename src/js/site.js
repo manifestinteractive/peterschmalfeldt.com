@@ -21,6 +21,7 @@
       const $menuTrigger = $('#menu-trigger')
       const $document = $(document)
       const $window = $(window)
+      const $emailMe = $('.email-me')
 
       // Remove Current Event Listeners
       $backToTop.off('click.mi', PS.backToTop)
@@ -30,6 +31,7 @@
       $trackInput.off('change.mi', PS.trackInput)
       $menuTrigger.off('click.mi', PS.menuTrigger)
       $window.off('scroll.mi', PS.scroll)
+      $emailMe.off('click.mi', PS.emailMe)
 
       // Add New Event Listeners
       $backToTop.on('click.mi', PS.backToTop)
@@ -39,6 +41,7 @@
       $trackInput.on('change.mi', PS.trackInput)
       $menuTrigger.on('click.mi', PS.menuTrigger)
       $window.on('scroll.mi', PS.scroll)
+      $emailMe.on('click.mi', PS.emailMe)
 
       const overscroll = new Overscroll()
       overscroll.init('/assets/images/peter.png')
@@ -49,6 +52,10 @@
           PS.rexyBlink()
         }
       }, 10000)
+    },
+
+    emailMe: function () {
+      return confirm('GREETINGS: I am open to discuss the following projects:\n\n1. Contract-based\n2. Fully Remote\n3. Part-time (max 20 hrs/wk)\n4. Flexible Scheduling\n5. Not a competitor to Patagonia.com')
     },
 
     /**
@@ -283,14 +290,15 @@
   (function () {
     if (typeof console !== 'undefined') {
       const email = $('<textarea />').html('&#109;&#101;&#064;&#112;&#101;&#116;&#101;&#114;&#115;&#099;&#104;&#109;&#097;&#108;&#102;&#101;&#108;&#100;&#116;&#046;&#099;&#111;&#109;').text()
-      const title = 'CERTIFIED SENIOR SALESFORCE COMMERCE CLOUD DEVELOPER'
+      const title = 'SENIOR FULL STACK ENGINEER'
       const ascii = '\n╔═╗┌─┐┌┬┐┌─┐┬─┐  ╔═╗┌─┐┬ ┬┌┬┐┌─┐┬  ┌─┐┌─┐┬  ┌┬┐┌┬┐\n╠═╝├┤  │ ├┤ ├┬┘  ╚═╗│  ├─┤│││├─┤│  ├┤ ├┤ │   ││ │ \n╩  └─┘ ┴ └─┘┴└─  ╚═╝└─┘┴ ┴┴ ┴┴ ┴┴─┘└  └─┘┴─┘─┴┘ ┴ \n\n'
-      const contact = `❯ EMAIL:\t${email}\n❯ GITHUB:\tmanifestinteractive\n❯ TWITTER:\tmrmidi`
+      const contact = `❯ EMAIL:\t${email}\n❯ GITHUB:\t@manifestinteractive`
+      const work = 'I AM OPEN TO DISCUSS THE FOLLOWING PROJECTS:\n\n1. Contract-based\n2. Fully Remote\n3. Part-time (max 20 hrs/wk)\n4. Flexible Scheduling\n5. Not a competitor to Patagonia.com'
 
       if (detectIE()) {
-        console.log(ascii + '  ' + title + '\n\n' + contact + '\n ')
+        console.log(ascii + '  ' + title + '\n\n' + contact + '\n\n' + work + '\n ')
       } else {
-        console.log('%c' + ascii + title + '\n\n%c' + contact + '\n ', 'font-family: monospace; color: #7fcab1', null)
+        console.log('%c' + ascii + title + '\n\n%c' + contact + '\n\n' + work + '\n ', 'font-family: monospace; color: #7fcab1', null)
       }
     }
   })()

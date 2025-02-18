@@ -63,8 +63,8 @@ If you do need to get the correct version of Node and NPM installed, here is how
 4. Lastly, you need to add the version of node this project is going to use:
 
     ```bash
-    nvm install 8.12.0
-    nvm use 8.12.0
+    nvm install 14.19.0
+    nvm use 14.19.0
     ```
 </p>
 </details>
@@ -103,7 +103,7 @@ We have a dedicated document that goes over how Code Deployment works, which you
 Graphics
 ---
 
-The awesome SVGs used in this project came from [Scale](https://2.flexiple.com/scale/multi-color-illustrations).
+The awesome SVGs used in this project came from [Scale](https://scale.flexiple.com/illustrations/multi/).
 
 #### Accent Colors:
 

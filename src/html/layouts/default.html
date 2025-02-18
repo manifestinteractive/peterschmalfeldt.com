@@ -10,8 +10,8 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Manifest">
-    <meta name="application-name" content="Manifest">
+    <meta name="apple-mobile-web-app-title" content="Schmalfeldt">
+    <meta name="application-name" content="Schmalfeldt">
     <meta name="theme-color" content="#0c1832">
 
     <title>{{ title }}</title>
@@ -19,6 +19,7 @@
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
     <meta name="cache-control" content="public">
+    <meta name="author" content="Peter Schmalfeldt">
     <meta name="company" content="Peter Schmalfeldt">
     <meta name="googlebot" content="{{ package.robots }}">
     <meta name="bingbot" content="{{ package.robots }}">
@@ -87,6 +88,8 @@
 
     <!-- Show GDPR if Outside America -->
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}function acceptGDPR(){window.gdprConcent=true;localStorage.setItem('gdprConcent','yes');document.documentElement.classList.remove('gdpr-required');initializeGoogleAnalytics();}function declineGDPR(){window.gdprConcent=false;localStorage.setItem('gdprConcent','no');document.documentElement.classList.remove('gdpr-required');}function initializeGoogleAnalytics(){gtag('js',new Date());gtag('config','{{ package.analytics }}');}window.gdprConcent=false;var timezone=(Intl&&typeof Intl.DateTimeFormat==='function')?Intl.DateTimeFormat().resolvedOptions().timeZone:null;if(typeof(localStorage)!=='undefined'){window.gdprConcent=localStorage.getItem('gdprConcent');}if((timezone&&timezone.startsWith('America'))||window.gdprConcent==='yes'){initializeGoogleAnalytics();}else{document.documentElement.classList.add('gdpr-required');}</script>
+
+    {{> jsonld}}
   </head>
   <body class="loading">
     <a class="skip-to-content-link" href="#main-wrapper" role="button" data-track data-category="Nav" data-action="Header" data-label="Skip to Main Content">
@@ -110,7 +113,6 @@
           <!-- Main Wrapper -->
           <div id="main-wrapper">
             {{> body}}
-            {{> jsonld}}
           </div>
           <!-- Main Wrapper Ends -->
 
