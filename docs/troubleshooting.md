@@ -86,7 +86,7 @@ HTML Errors
 You might be seeing something that looks like this injected at the top of the page:
 
 ```
----layout: default title: Peter Schmalfeldt description: Senior Full Stack Engineer with 25+ years of experience in web development, Salesforce Commerce Cloud (SFCC), and AI automation. Specializing in scalable e-commerce solutions, custom software development, and AI-driven automation. ---
+---layout: default title: Peter Schmalfeldt description: Senior Full Stack Engineer with 25+ years of experience in web development. Specializing in scalable e-commerce solutions and AI-driven automation. ---
 ```
 
 If so, that means you likely used some fancy code formatting tool that messed up the panini template variables that are set on top of some HTML pages.  To fix this, you can check the HTML files that are used on the page you are seeing this error on.  At the top of one of them, you will see that text you saw in your HTML page.  To correct the issue, make sure the template variables in the HTML are written like this:
@@ -95,7 +95,7 @@ If so, that means you likely used some fancy code formatting tool that messed up
 ---
 layout: default
 title: Peter Schmalfeldt
-description: Senior Full Stack Engineer with 25+ years of experience in web development, Salesforce Commerce Cloud (SFCC), and AI automation. Specializing in scalable e-commerce solutions, custom software development, and AI-driven automation.
+description: Senior Full Stack Engineer with 25+ years of experience in web development. Specializing in scalable e-commerce solutions and AI-driven automation.
 ---
 ```
 

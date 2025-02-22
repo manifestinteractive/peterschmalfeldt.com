@@ -21,27 +21,22 @@
       const $menuTrigger = $('#menu-trigger')
       const $document = $(document)
       const $window = $(window)
-      const $emailMe = $('.email-me')
 
       // Remove Current Event Listeners
-      $backToTop.off('click.mi', PS.backToTop)
-      $document.off('click.mi', PS.rexyBlink)
-      $document.off('mousemove.mi', PS.moveEyes)
-      $trackLinks.off('click.mi', PS.trackLinks)
-      $trackInput.off('change.mi', PS.trackInput)
-      $menuTrigger.off('click.mi', PS.menuTrigger)
-      $window.off('scroll.mi', PS.scroll)
-      $emailMe.off('click.mi', PS.emailMe)
+      $backToTop.off('click.ps', PS.backToTop)
+      $document.off('click.ps', PS.moveFace)
+      $trackLinks.off('click.ps', PS.trackLinks)
+      $trackInput.off('change.ps', PS.trackInput)
+      $menuTrigger.off('click.ps', PS.menuTrigger)
+      $window.off('scroll.ps', PS.scroll)
 
       // Add New Event Listeners
-      $backToTop.on('click.mi', PS.backToTop)
-      $document.on('click.mi', PS.rexyBlink)
-      $document.on('mousemove.mi', PS.moveEyes)
-      $trackLinks.on('click.mi', PS.trackLinks)
-      $trackInput.on('change.mi', PS.trackInput)
-      $menuTrigger.on('click.mi', PS.menuTrigger)
-      $window.on('scroll.mi', PS.scroll)
-      $emailMe.on('click.mi', PS.emailMe)
+      $backToTop.on('click.ps', PS.backToTop)
+      $document.on('click.ps', PS.moveFace)
+      $trackLinks.on('click.ps', PS.trackLinks)
+      $trackInput.on('change.ps', PS.trackInput)
+      $menuTrigger.on('click.ps', PS.menuTrigger)
+      $window.on('scroll.ps', PS.scroll)
 
       const overscroll = new Overscroll()
       overscroll.init('/assets/images/peter.png')
@@ -49,13 +44,9 @@
       setInterval(function () {
         const random = Math.floor(Math.random() * 2)
         if (random === 1) {
-          PS.rexyBlink()
+          PS.moveFace()
         }
       }, 10000)
-    },
-
-    emailMe: function () {
-      return confirm('GREETINGS: I am open to discuss the following projects:\n\n1. Contract-based\n2. Fully Remote\n3. Part-time (max 20 hrs/wk)\n4. Flexible Scheduling\n5. Not a competitor to Patagonia.com')
     },
 
     /**
@@ -148,39 +139,14 @@
       $(this).attr('aria-expanded', !isOpen)
     },
 
-    moveEyes: function (e) {
-      // Don't bother animating eye tracking if no one can see them
-      if ($('#logo:hover').length !== 0 || !$('#logo').isInViewport() || window.innerWidth < 768) {
-        if (PS.moveResetTimeout) {
-          $('#logo-eyes, #left-eye, #right-eye').css('transform', 'translate(0, 0)').removeClass('moving')
-          clearTimeout(PS.moveResetTimeout)
-        }
-        return
-      }
+    moveFace: function () {
+      const $face = $('#header-face')
+      $face.toggleClass('shake')
 
-      requestAnimationFrame(function () {
-        const x = (-((window.innerWidth / 2) - e.pageX) / 160)
-        const y = (-((window.innerHeight / 2) - e.pageY) / 160)
-
-        $('#logo-eyes, #left-eye, #right-eye').addClass('moving').css('transform', `translate(${x}px, ${y}px)`)
-
-        if (PS.moveResetTimeout) {
-          clearTimeout(PS.moveResetTimeout)
-        }
-
-        PS.moveResetTimeout = setTimeout(function () {
-          $('#logo-eyes, #left-eye, #right-eye').css('transform', 'translate(0, 0)').removeClass('moving')
-        }, 3000)
-      })
-    },
-
-    rexyBlink: function () {
-      const $blink = $('.blink')
-      $blink.toggleClass('hide')
-
-      setTimeout(function () {
-        $blink.toggleClass('hide')
-      }, 125)
+      clearTimeout(PS.moveResetTimeout)
+      PS.moveResetTimeout = setTimeout(function () {
+        $face.toggleClass('shake')
+      }, 500)
     },
 
     scroll: function () {
