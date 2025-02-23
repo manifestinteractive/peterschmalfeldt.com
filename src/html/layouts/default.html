@@ -80,7 +80,7 @@
     <!-- Minimal CSS to prevent blocking page load -->
     <style>
     .pageloader {display:none;}body.loading .pageloader{display:flex;justify-content:center;position:fixed;top:0;left:0;height:100%;width:100%;z-index:100000;overflow:hidden;pointer-events:none;background-color:#FFFFFF;transform:translateZ(1px);flex-direction: column;
-      justify-content:center;align-items:center;}.pageloader img{width:100%;max-width:250px;transform:translateZ(1px);height:auto;}#floating-head{transform:translate3d(40px, 0, 1px) rotate(0deg);animation: slideIn 0.15s ease-in forwards;}@keyframes slideIn {from {transform:translate3d(40px, 0, 1px) rotate(15deg)} to {transform:translate3d(0, 0, 1px) rotate(0deg)}}
+      justify-content:center;align-items:center;}.pageloader img{width:100%;max-width:250px;transform:translateZ(1px);height:auto;position:absolute;z-index:5;}.pageloader svg{width:100%;max-width:468px;transform:translateZ(1px);height:auto;position:absolute;z-index:1;animation: spin 3s infinite linear;}#floating-head{transform:translate3d(40px, 0, 1px) rotate(0deg);animation: slideIn 0.15s ease-in forwards;}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}} @keyframes slideIn {from {transform:translate3d(40px, 0, 1px) rotate(15deg)} to {transform:translate3d(0, 0, 1px) rotate(0deg)}}
     @media (prefers-color-scheme: dark) {html,body{background-color: #0c1832;}body.loading .pageloader{background-color: #0c1832;}}
     </style>
 
@@ -100,6 +100,8 @@
     <a class="skip-to-content-link" href="#main-wrapper" role="button" data-track data-category="Nav" data-action="Header" data-label="Skip to Main Content">
       Skip to Main Content
     </a>
+
+    {{> ai-intro}}
 
     {{> pageloader}}
 
