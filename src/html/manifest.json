@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "background_color": "#0c1832",
   "categories": ["business", "personalization", "productivity", "utilities"],
-  "description": "Senior Full Stack Engineer with 25+ years of experience in web development. Specializing in scalable e-commerce solutions and AI-driven automation.",
+  "description": "Senior Full Stack Engineer with 25+ years of experience in web development. Specializing in scalable e-commerce solutions and AI Solutions Architecture.",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
   "icons": [
