@@ -9,6 +9,7 @@
     loaded: false,
     moveResetTimeout: false,
     timeout: null,
+    testimonialSlide: 1,
 
     /**
      * Bind Events to DOM Elements
@@ -19,34 +20,33 @@
       const $trackLinks = $('a[data-track], button[data-track]')
       const $trackInput = $('input[data-track], textarea[data-track], select[data-track]')
       const $menuTrigger = $('#menu-trigger')
-      const $document = $(document)
+      const $testimonialDots = $('#testimonials .dot')
+      const $leftArrow = $('#left-arrow')
+      const $rightArrow = $('#right-arrow')
       const $window = $(window)
 
       // Remove Current Event Listeners
       $backToTop.off('click.ps', PS.backToTop)
-      $document.off('click.ps', PS.moveFace)
       $trackLinks.off('click.ps', PS.trackLinks)
       $trackInput.off('change.ps', PS.trackInput)
       $menuTrigger.off('click.ps', PS.menuTrigger)
+      $leftArrow.off('click.ps', PS.testimonialPrev)
+      $rightArrow.off('click.ps', PS.testimonialNext)
+      $testimonialDots.off('click.ps', PS.testimonialDots)
       $window.off('scroll.ps', PS.scroll)
 
       // Add New Event Listeners
       $backToTop.on('click.ps', PS.backToTop)
-      $document.on('click.ps', PS.moveFace)
       $trackLinks.on('click.ps', PS.trackLinks)
       $trackInput.on('change.ps', PS.trackInput)
       $menuTrigger.on('click.ps', PS.menuTrigger)
+      $leftArrow.on('click.ps', PS.testimonialPrev)
+      $rightArrow.on('click.ps', PS.testimonialNext)
+      $testimonialDots.on('click.ps', PS.testimonialDots)
       $window.on('scroll.ps', PS.scroll)
 
       const overscroll = new Overscroll()
       overscroll.init('/assets/images/peter.png')
-
-      setInterval(function () {
-        const random = Math.floor(Math.random() * 2)
-        if (random === 1) {
-          PS.moveFace()
-        }
-      }, 10000)
     },
 
     /**
@@ -57,7 +57,7 @@
      * @param value
      */
     trackEvent: function (category, action, label, value) {
-      if (typeof gtag !== 'undefined' && !PS.devFlags.disableAnalytics && window.gdprConcent) {
+      if (typeof gtag !== 'undefined' && !PS.devFlags.disableAnalytics) {
         gtag('event', action, {
           event_category: category,
           event_label: label,
@@ -139,14 +139,31 @@
       $(this).attr('aria-expanded', !isOpen)
     },
 
-    moveFace: function () {
-      const $face = $('#header-face')
-      $face.toggleClass('shake')
+    testimonialNext: function (evt) {
+      let slide = PS.testimonialSlide + 1
+      if (slide > $('#testimonials .slide').length) {
+        slide = 1
+      }
+      $('#testimonials .slide, #testimonials .dot').removeClass('active').addClass('inactive')
+      $(`#testimonials .slide-${slide}, #testimonials .dot-${slide}`).addClass('active').removeClass('inactive')
+      PS.testimonialSlide = slide
+    },
 
-      clearTimeout(PS.moveResetTimeout)
-      PS.moveResetTimeout = setTimeout(function () {
-        $face.toggleClass('shake')
-      }, 500)
+    testimonialPrev: function () {
+      let slide = PS.testimonialSlide - 1
+      if (slide < 1) {
+        slide = $('#testimonials .slide').length
+      }
+      $('#testimonials .slide, #testimonials .dot').removeClass('active').addClass('inactive')
+      $(`#testimonials .slide-${slide}, #testimonials .dot-${slide}`).addClass('active').removeClass('inactive')
+      PS.testimonialSlide = slide
+    },
+
+    testimonialDots: function (evt) {
+      const slide = evt.target.dataset.slide
+      $('#testimonials .slide, #testimonials .dot').removeClass('active').addClass('inactive')
+      $(`#testimonials .slide-${slide}, #testimonials .dot-${slide}`).addClass('active').removeClass('inactive')
+      PS.testimonialSlide = slide
     },
 
     scroll: function () {
@@ -256,7 +273,7 @@
   (function () {
     if (typeof console !== 'undefined') {
       const email = $('<textarea />').html('&#109;&#101;&#064;&#112;&#101;&#116;&#101;&#114;&#115;&#099;&#104;&#109;&#097;&#108;&#102;&#101;&#108;&#100;&#116;&#046;&#099;&#111;&#109;').text()
-      const title = 'SENIOR FULL STACK ENGINEER'
+      const title = 'Senior Full-Stack Web Developer'
       const ascii = '\n╔═╗┌─┐┌┬┐┌─┐┬─┐  ╔═╗┌─┐┬ ┬┌┬┐┌─┐┬  ┌─┐┌─┐┬  ┌┬┐┌┬┐\n╠═╝├┤  │ ├┤ ├┬┘  ╚═╗│  ├─┤│││├─┤│  ├┤ ├┤ │   ││ │ \n╩  └─┘ ┴ └─┘┴└─  ╚═╝└─┘┴ ┴┴ ┴┴ ┴┴─┘└  └─┘┴─┘─┴┘ ┴ \n\n'
       const contact = `❯ EMAIL:\t${email}\n❯ GITHUB:\t@manifestinteractive`
       const work = 'I AM OPEN TO DISCUSS THE FOLLOWING PROJECTS:\n\n1. Contract-based\n2. Fully Remote\n3. Part-time (max 20 hrs/wk)\n4. Flexible Scheduling\n5. Not a competitor to Patagonia.com'

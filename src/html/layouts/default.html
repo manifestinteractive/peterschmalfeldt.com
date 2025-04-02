@@ -63,10 +63,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="{{ package.assetPath }}images/apple/icon-114x114.png">
     <link rel="apple-touch-icon" sizes="144x144" href="{{ package.assetPath }}images/apple/icon-144x144.png">
 
-    <!-- Preload -->
-    <link rel="preload" as="image" href="{{ package.assetPath }}images/icon-512x512.png">
-    <link rel="preload" as="image" href="{{ package.assetPath }}images/header-icon.png">
-
     <!-- Canonical -->
     <link rel="canonical" href="{{ package.base }}{{ canonical }}">
 
@@ -78,40 +74,35 @@
     <link rel="alternate" type="text/xml+oembed" href="{{ package.base }}/oembed.xml" />
 
     <!-- Minimal CSS to prevent blocking page load -->
-    <style>
-    .pageloader {display:none;}body.loading .pageloader{display:flex;justify-content:center;position:fixed;top:0;left:0;height:100%;width:100%;z-index:100000;overflow:hidden;pointer-events:none;background-color:#FFFFFF;transform:translateZ(1px);flex-direction: column;
-      justify-content:center;align-items:center;}.pageloader img{width:100%;max-width:250px;transform:translateZ(1px);height:auto;position:absolute;z-index:5;}.pageloader svg{width:100%;max-width:468px;transform:translateZ(1px);height:auto;position:absolute;z-index:1;animation: spin 3s infinite linear;}#floating-head{transform:translate3d(40px, 0, 1px) rotate(0deg);animation: slideIn 0.15s ease-in forwards;}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}} @keyframes slideIn {from {transform:translate3d(40px, 0, 1px) rotate(15deg)} to {transform:translate3d(0, 0, 1px) rotate(0deg)}}
-    @media (prefers-color-scheme: dark) {html,body{background-color: #0c1832;}body.loading .pageloader{background-color: #0c1832;}}
-    </style>
+    <style>.pageloader {display:none;backdrop-filter: blur(4px);}body.loading .pageloader {display:flex;justify-content:center;position:fixed;top:0;left:0;height:100%;width:100%;z-index:100000;overflow:hidden;pointer-events:none;background-color:rgba(255, 255, 255, 0.80);transform:translateZ(1px);flex-direction: column;justify-content:center;align-items:center;}.loader {width: 50px;aspect-ratio: 1;border-radius: 50%;border: 8px solid transparent;border-right-color: rgba(12, 24, 50, 0.85);;position: relative;animation: loading 1s infinite linear;}.loader:before, .loader:after {content: "";position: absolute;inset: -8px;border-radius: 50%;border: inherit;animation: inherit;animation-duration: 2s;}.loader:after {animation-duration: 4s;}@keyframes loading {100% {transform: rotate(1turn)}}@media (prefers-color-scheme: dark) {html,body{background-color: #0c1832;}body.loading .pageloader{background-color: rgba(12, 24, 50, 0.80);}.loader {border-right-color: rgba(255, 255, 255, 0.85);}}</style>
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ package.assetPath }}css/plugins.{{ package.version }}.min.css{{ package.cacheBreak }}">
     <link rel="stylesheet" href="{{ package.assetPath }}css/app.{{ package.version }}.min.css{{ package.cacheBreak }}">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ package.analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-{{ package.analytics }}');
+    </script>
 
-    <!-- Show GDPR if Outside America -->
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}function acceptGDPR(){window.gdprConcent=true;localStorage.setItem('gdprConcent','yes');document.documentElement.classList.remove('gdpr-required');initializeGoogleAnalytics();}function declineGDPR(){window.gdprConcent=false;localStorage.setItem('gdprConcent','no');document.documentElement.classList.remove('gdpr-required');}function initializeGoogleAnalytics(){gtag('js',new Date());gtag('config','{{ package.analytics }}');}window.gdprConcent=false;var timezone=(Intl&&typeof Intl.DateTimeFormat==='function')?Intl.DateTimeFormat().resolvedOptions().timeZone:null;if(typeof(localStorage)!=='undefined'){window.gdprConcent=localStorage.getItem('gdprConcent');}if((timezone&&timezone.startsWith('America'))||window.gdprConcent==='yes'){initializeGoogleAnalytics();}else{document.documentElement.classList.add('gdpr-required');}</script>
-
+    <!-- JSON+LD Person -->
     {{> jsonld}}
+
+    <!-- JSON+LD ProfessionalService -->
+    {{> jsonld-service}}
   </head>
   <body class="loading">
     <a class="skip-to-content-link" href="#main-wrapper" role="button" data-track data-category="Nav" data-action="Header" data-label="Skip to Main Content">
       Skip to Main Content
     </a>
 
-    {{> ai-intro}}
-
     {{> pageloader}}
 
-    {{> gdpr}}
-
     <main>
-      <!--
-      {{ title }}
-      -->
-
       <!-- Page Wrapper -->
       <div id="page-wrapper">
         {{> header}}
@@ -125,14 +116,14 @@
           </div>
           <!-- Main Wrapper Ends -->
 
+          {{> testimonials}}
+
           {{> footer}}
         </div>
         <!-- Content Wrapper Ends -->
       </div>
       <!-- Page Wrapper Ends -->
     </main>
-
-    {{> unsupported-browser}}
 
     <button id="back-to-top" aria-label="Back to Top" data-track data-category="Nav" data-action="Footer" data-label="Back to Top"></button>
 
@@ -141,14 +132,7 @@
     <script defer src="{{ package.assetPath }}js/plugins.{{package.version}}.min.js{{ package.cacheBreak }}"></script>
     <script defer src="{{ package.assetPath }}js/app.{{package.version}}.min.js{{ package.cacheBreak }}"></script>
     <script>
-      // Check for Unsupported Browsers
-      if (window.document.documentMode) {
-        document.getElementById('unsupported-browser').style.display = 'block';
-        document.getElementById('loading-wrapper').style.display = 'none';
-        document.getElementById('page-wrapper').style.display = 'none';
-        document.getElementById('back-to-top').style.display = 'none';
-        // Redirect to Unsupported Browser Page
-      } else if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+      if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js')
       }
     </script>

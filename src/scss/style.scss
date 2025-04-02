@@ -178,17 +178,13 @@ blockquote {
   text-decoration: none;
 }
 
-.gdpr-prompt {
-  display: none;
-}
-
 .my-name {
   width: 200px;
-  padding-left: 14px;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   padding-top: 4px;
+  text-transform: uppercase;
 }
 
 .embed-video-responsive-container {
@@ -207,26 +203,6 @@ blockquote {
   top: 0;
   width: 100%;
   z-index: 1;
-}
-
-#header-face {
-  transform-origin: center;
-  transform: rotate(0deg);
-  transition: transform 0.10s;
-}
-
-#header-face.shake {
-  animation: shakeFace 0.10s ease-in-out infinite alternate;
-  animation-play-state: running;
-}
-
-@keyframes shakeFace {
-  0% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(5deg);
-  }
 }
 
 #back-to-top {
@@ -265,67 +241,6 @@ blockquote {
 
     &:hover, &:focus {
       opacity: 1;
-    }
-  }
-}
-
-#unsupported-browser {
-  display: none;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background: #E03131;
-  overflow: hidden;
-  z-index: 9999;
-
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -40px 0px 0px -200px;
-    display: block;
-    width: 430px;
-    height: 100px;
-    color: #fff;
-
-    span {
-      font-size: 100px;
-      font-weight: bold;
-      line-height: 94px;
-      display: block;
-      width: 36px;
-      float: left;
-      margin-right: 0;
-      text-shadow: -2px -2px #333;
-    }
-
-    .heading {
-      font-size: 34px;
-      font-weight: bold;
-      line-height: 40px;
-      margin: 0px;
-      text-shadow: -2px -2px #611b22;
-      text-transform: lowercase;
-    }
-
-    p {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 22px;
-      letter-spacing: 0px;
-      margin: 0px;
-      padding: 0px;
-      margin-top: 6px;
-      color: #FFF;
-
-      a {
-        font-size: 14px;
-        font-weight: bold;
-        color: #FFF;
-        text-decoration: underline;
-      }
     }
   }
 }
@@ -633,18 +548,225 @@ h2.title + div.cta > p, h2.title > div > p > a {
   }
 }
 
+// Testimonials
+#testimonials {
+  .wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    color: #dee5eb;
+    cursor: pointer;
+    font-size: 4em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+    padding: 5px;
+    z-index: 22222222;
+
+    &:before {
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: #ea830e;
+    }
+
+
+    &.left {
+      left: 10px;
+    }
+
+    &.right {
+      right: 10px;
+    }
+  }
+
+  .dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    left: 0;
+    display: block;
+    z-index: 3333;
+    height: 12px;
+
+    .dot {
+      list-style-type: none;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #dee5eb;
+      border: 1px solid #dee5eb;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+      position: relative;
+
+      &.active, &:hover {
+        background: #ea830e;
+        border-color: #ea830e;
+      }
+
+      &.active {
+        background: #ea830e;
+        animation: testimonials-scale .5s ease-in-out forwards;
+      }
+    }
+  }
+
+  .cont {
+    position: relative;
+    overflow: hidden;
+
+    & > div {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 0 70px 0;
+      opacity: 0;
+
+      &.inactive {
+        opacity: 1;
+      }
+
+      &.active {
+        position: relative;
+        opacity: 1;
+      }
+    }
+
+    div {
+      .img img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border-radius: 50%;
+      }
+
+      h2 {
+        color: #ea830e;
+        font-size: 1.4em;
+        margin: 15px 0;
+      }
+
+      p {
+        font-size: 1.15em;
+        width: 80%;
+        margin: auto;
+        min-height: 100px;
+      }
+
+      &.active {
+        .img img {
+          animation: testimonials-show .15s ease-in-out forwards;
+        }
+        h2 {
+          animation: testimonials-content-in .15s ease-in-out forwards;
+        }
+        p {
+          animation: testimonials-content-in .15s ease-in-out forwards;
+        }
+      }
+
+      &.inactive {
+        .img img {
+          animation: testimonials-hide .15s ease-in-out forwards;
+        }
+        h2 {
+          animation: testimonials-content-out .15s ease-in-out forwards;
+        }
+        p {
+          animation: testimonials-content-out .15s ease-in-out forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes testimonials-scale {
+  0% {
+      box-shadow: 0px 0px 0px 0px #dee5eb33;
+  }
+
+  35% {
+      box-shadow: 0px 0px 10px 5px #dee5eb33;
+  }
+
+  70% {
+      box-shadow: 0px 0px 10px 5px #ea830e33;
+  }
+
+  100% {
+      box-shadow: 0px 0px 0px 0px #ea830e33;
+  }
+}
+
+@keyframes testimonials-content-in {
+  from {
+      opacity: 0;
+      transform: translateY(10%);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes testimonials-content-out {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  to {
+      opacity: 0;
+      transform: translateY(-10%);
+  }
+}
+
+@keyframes testimonials-show {
+  from {
+      opacity: 0;
+      transform: scale(0);
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes testimonials-hide {
+  from {
+      opacity: 1;
+      transform: scale(1);
+  }
+
+  to {
+      opacity: 0;
+      transform: scale(0);
+  }
+}
+
 // Responsive
 @media all and (max-width:1199px) {
   #logo a {
     margin-top: 10px;
-
-    img {
-      max-height: 50px;
-    }
   }
   .my-name {
     width: 168px;
-    padding-left: 14px;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -655,14 +777,9 @@ h2.title + div.cta > p, h2.title > div > p > a {
 @media all and (min-width:768px) and (max-width:991px) {
   #logo a {
     margin-top: 10px;
-
-    img {
-      max-height: 40px;
-    }
   }
   .my-name {
     width: 125px;
-    padding-left: 12px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -673,7 +790,7 @@ h2.title + div.cta > p, h2.title > div > p > a {
 @media all and (max-width:767px) {
   // Heading
   h1.heading {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 32px;
   }
 
@@ -684,12 +801,30 @@ h2.title + div.cta > p, h2.title > div > p > a {
 
   .my-name {
     width: unset;
-    padding-left: 1px;
     font-size: 18px;
     font-weight: 400;
     line-height: 50px;
     padding-top: 0px;
     white-space: nowrap;
+    padding-left: 14px;
+  }
+
+  #testimonials {
+    .wrap {
+      padding: 0 10px 20px 10px;
+    }
+    .cont div p {
+      min-height: 250px;
+    }
+    .arrow.right {
+      right: 0;
+    }
+    .arrow.left {
+      left: 0;
+    }
+    .dot {
+      margin: 0 8px !important;;
+    }
   }
 
   // Header
@@ -861,142 +996,22 @@ h2.title + div.cta > p, h2.title > div > p > a {
     font-size: 18px;
     line-height: 22px;
   }
-}
 
-html.gdpr-required {
-  .gdpr-prompt {
-    position: fixed;
-    display: block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    color: var(--color-white);
-    z-index: 1000;
-    padding: 20px;
-    overscroll-behavior: contain;
-
-    .gdpr-icon {
-      width: 50px;
-      display: inline-block;
-      height: 40px;
-      font-size: 40px;
-      vertical-align: top;
-      line-height: 50px;
+  #testimonials {
+    .wrap {
+      padding: 0 10px 20px 10px;
     }
-
-    .gdpr-wrapper {
-      display: inline-block;
-      max-width: calc(100% - 280px);
-      vertical-align: top;
-      width: 100%;
-
-      .gdpr-head {
-        font-weight: bold;
-        font-size: 18px;
-      }
-
-      .gdpr-body {
-        font-weight: 300;
-
-        a {
-          text-decoration: underline;
-          opacity: 1;
-          transition: color 0.25s;
-          color: var(--color-white);
-
-          &:hover, &:focus {
-            color: var(--accent-green);
-          }
-        }
-      }
+    .cont div p {
+      min-height: 300px;
     }
-
-    .gdpr-buttons {
-      display: inline-block;
-      white-space: nowrap;
-      float: right;
-      margin-top: 5px;
-      margin-right: 25px;
-
-      button {
-        appearance: none;
-        background-color: var(--color-white);
-        color: var(--color-black);
-        text-transform: uppercase;
-        opacity: 0.8;
-        transition: all 0.25s;
-        border: none;
-        padding: 8px 16px;
-        font-weight: 500;
-
-        &.gdpr-accept {
-          opacity: 1;
-          &:hover, &:focus {
-            background-color: var(--accent-green);
-          }
-        }
-
-        &.gdpr-decline {
-          opacity: 0.5;
-          margin-right: 5px;
-
-          &:hover, &:focus {
-            background-color: var(--accent-red);
-          }
-        }
-
-        &.gdpr-close {
-          background-color: transparent;
-          color: var(--color-white);
-          position: absolute;
-          top: 0;
-          right: 0;
-          font-size: 20px;
-        }
-
-        &:hover, &:focus {
-          opacity: 1;
-        }
-      }
+    .arrow.right {
+      right: 0;
     }
-  }
-
-  #back-to-top {
-    display: none !important;
-  }
-}
-
-@media all and (max-width:600px) {
-  html.gdpr-required {
-    .gdpr-prompt {
-      .gdpr-icon {
-        width: 30px;
-        display: inline-block;
-        height: 20px;
-        font-size: 20px;
-        vertical-align: top;
-        line-height: 30px;
-      }
-
-      .gdpr-wrapper {
-        display: inline-block;
-        max-width: calc(100% - 70px);
-      }
-
-      .gdpr-buttons {
-        display: inline-block;
-        white-space: nowrap;
-        max-width: calc(100% - 70px);
-        text-align: left;
-        float: none;
-        margin-left: 35px;
-        margin-top: 15px;
-
-        button {
-          padding: 4px 12px;
-        }
-      }
+    .arrow.left {
+      left: 0;
+    }
+    .dot {
+      margin: 0 8px !important;
     }
   }
 }
