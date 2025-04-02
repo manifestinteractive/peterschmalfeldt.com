@@ -550,6 +550,11 @@ h2.title + div.cta > p, h2.title > div > p > a {
 
 // Testimonials
 #testimonials {
+  user-select: none;
+
+  * {
+    user-select: none;
+  }
   .wrap {
     position: relative;
     width: 100%;
@@ -654,10 +659,13 @@ h2.title + div.cta > p, h2.title > div > p > a {
         border-radius: 50%;
       }
 
-      h2 {
+      strong {
         color: #ea830e;
         font-size: 1.4em;
         margin: 15px 0;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 3em;
       }
 
       p {
@@ -671,7 +679,7 @@ h2.title + div.cta > p, h2.title > div > p > a {
         .img img {
           animation: testimonials-show .15s ease-in-out forwards;
         }
-        h2 {
+        strong {
           animation: testimonials-content-in .15s ease-in-out forwards;
         }
         p {
@@ -683,7 +691,7 @@ h2.title + div.cta > p, h2.title > div > p > a {
         .img img {
           animation: testimonials-hide .15s ease-in-out forwards;
         }
-        h2 {
+        strong {
           animation: testimonials-content-out .15s ease-in-out forwards;
         }
         p {
