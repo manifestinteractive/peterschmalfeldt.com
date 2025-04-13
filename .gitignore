@@ -8,3 +8,5 @@ aws.json
 src/assets/pdf/*.docx
 !.nvmrc
 !website.code-workspace
+src/assets/css/style.css
+build

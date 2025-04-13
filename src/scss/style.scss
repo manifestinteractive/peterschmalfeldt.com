@@ -216,14 +216,19 @@ blockquote {
   bottom: 20px;
   right: 20px;
   transition: background-color .3s, opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0.35;
+  visibility: visible;
   z-index: 1000;
   appearance: none;
   border: none;
   padding: 0;
   margin: 0;
   text-align: center;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
 
   &::after {
     content: "\f366";
@@ -234,13 +239,12 @@ blockquote {
     line-height: 40px;
     color: var(--color-white);
   }
-  &.show {
-    cursor: pointer;
-    opacity: 0.35;
-    visibility: visible;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
 
     &:hover, &:focus {
-      opacity: 1;
+      opacity: 0;
     }
   }
 }

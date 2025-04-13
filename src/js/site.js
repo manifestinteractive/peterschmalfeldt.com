@@ -169,10 +169,10 @@
     scroll: function () {
       const $backToTop = $('#back-to-top')
 
-      if ($(window).scrollTop() > 300 && !$backToTop.hasClass('show')) {
-        $backToTop.addClass('show')
-      } else if ($(window).scrollTop() <= 300 && $backToTop.hasClass('show')) {
-        $backToTop.removeClass('show')
+      if ($(window).scrollTop() > 300 && $backToTop.hasClass('hidden')) {
+        $backToTop.removeClass('hidden')
+      } else if ($(window).scrollTop() <= 300 && !$backToTop.hasClass('hidden')) {
+        $backToTop.addClass('hidden')
       }
     },
 
@@ -275,7 +275,7 @@
       const email = $('<textarea />').html('&#109;&#101;&#064;&#112;&#101;&#116;&#101;&#114;&#115;&#099;&#104;&#109;&#097;&#108;&#102;&#101;&#108;&#100;&#116;&#046;&#099;&#111;&#109;').text()
       const title = 'Senior Full-Stack Web Developer'
       const ascii = '\n╔═╗┌─┐┌┬┐┌─┐┬─┐  ╔═╗┌─┐┬ ┬┌┬┐┌─┐┬  ┌─┐┌─┐┬  ┌┬┐┌┬┐\n╠═╝├┤  │ ├┤ ├┬┘  ╚═╗│  ├─┤│││├─┤│  ├┤ ├┤ │   ││ │ \n╩  └─┘ ┴ └─┘┴└─  ╚═╝└─┘┴ ┴┴ ┴┴ ┴┴─┘└  └─┘┴─┘─┴┘ ┴ \n\n'
-      const contact = `❯ EMAIL:\t${email}\n❯ GITHUB:\t@manifestinteractive`
+      const contact = `❯ EMAIL:\t${email}\n❯ GITHUB:\thttps://github.com/manifestinteractive\n❯ LINKEDIN:\thttps://www.linkedin.com/in/peter-schmalfeldt`
       const work = 'I AM OPEN TO DISCUSS THE FOLLOWING PROJECTS:\n\n1. Contract-based\n2. Fully Remote\n3. Part-time (max 20 hrs/wk)\n4. Flexible Scheduling\n5. Not a competitor to Patagonia.com'
 
       if (detectIE()) {

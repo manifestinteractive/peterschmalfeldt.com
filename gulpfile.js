@@ -17,6 +17,7 @@ const sourcemaps = require('gulp-sourcemaps')
 const uglify = require('gulp-uglify')
 const version = require('./package.json').version
 const workboxBuild = require('workbox-build')
+const purgecss = require('gulp-purgecss')
 
 const assetsPath = 'src/assets/'
 const port = process.env.RVW_SERVER_PORT || 8081
@@ -32,36 +33,26 @@ const scssOptions = {
 
 // Erases the dist folder
 gulp.task('clean', (done) => {
+  rimraf('build')
   rimraf('dist')
-  done()
-})
-
-// Compile css from node modules
-gulp.task('compile-css', (done) => {
-  gulp.src([
-    `${assetsPath}/css/bootstrap.css`,
-    `${assetsPath}/css/ionicons.css`
-  ])
-  .pipe(csso())
-  .pipe(concat(`plugins.${version}.min.css`))
-  .pipe(gulp.dest('dist/assets/css/'))
-
   done()
 })
 
 // Compile HTML
 gulp.task('compile-html', (done) => {
-  gulp.src('src/html/pages/**/*.html')
-    .pipe(panini({
-      root: 'src/html/pages/',
-      layouts: 'src/html/layouts/',
-      partials: 'src/html/includes/',
-      helpers: 'src/html/helpers/',
-      data: 'src/html/data/'
-    })
-  )
-  .pipe(gulp.dest('dist'))
-  .on('finish', browser.reload)
+  gulp
+    .src('src/html/pages/**/*.html')
+    .pipe(
+      panini({
+        root: 'src/html/pages/',
+        layouts: 'src/html/layouts/',
+        partials: 'src/html/includes/',
+        helpers: 'src/html/helpers/',
+        data: 'src/html/data/'
+      })
+    )
+    .pipe(gulp.dest('dist'))
+    .on('finish', browser.reload)
 
   done()
 })
@@ -74,54 +65,14 @@ gulp.task('compile-html:reset', (done) => {
 // Compile js from node modules
 // @TODO: Clean up unused code once we finish the site
 gulp.task('compile-js', (done) => {
-  gulp.src([
-    `${assetsPath}/js/jquery.min.js`,
-    `${assetsPath}/js/overscroll.min.js`
-  ])
-  .pipe(uglify())
-  .pipe(concat(`plugins.${version}.min.js`))
-  .pipe(gulp.dest('dist/assets/js/'))
-
-  if (browser) {
-    browser.reload()
-  }
-
-  done()
-})
-
-// Compile Theme Scss
-gulp.task('compile-scss', (done) => {
-  const processors = [
-    mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: '.is-true-hover ' }),
-    autoprefixer({
-      overrideBrowserslist: [
-        'Chrome >= 45',
-        'Firefox ESR',
-        'Edge >= 12',
-        'Explorer >= 10',
-        'iOS >= 9',
-        'Safari >= 9',
-        'Android >= 4.4',
-        'Opera >= 30'
-      ]
-    })
-  ]
-
-  if (process.env.NODE_ENV === 'production') {
-    gulp.src('./src/scss/style.scss')
-      .pipe(sass(scssOptions).on('error', sass.logError))
-      .pipe(postcss(processors))
-      .pipe(concat(`app.${version}.min.css`))
-      .pipe(gulp.dest(`dist/assets/css/`))
-  } else {
-    gulp.src('./src/scss/style.scss')
-      .pipe(sourcemaps.init())
-      .pipe(sass(scssOptions).on('error', sass.logError))
-      .pipe(postcss(processors))
-      .pipe(sourcemaps.write())
-      .pipe(concat(`app.${version}.min.css`))
-      .pipe(gulp.dest(`dist/assets/css/`))
-  }
+  gulp
+    .src([
+      `${assetsPath}/js/jquery.min.js`,
+      `${assetsPath}/js/overscroll.min.js`
+    ])
+    .pipe(uglify())
+    .pipe(concat(`plugins.${version}.min.js`))
+    .pipe(gulp.dest('dist/assets/js/'))
 
   if (browser) {
     browser.reload()
@@ -132,14 +83,16 @@ gulp.task('compile-scss', (done) => {
 
 // Copy static assets
 gulp.task('copy', (done) => {
-  gulp.src([
-    'src/html/.htaccess',
-    'src/html/favicon.ico',
-    'src/html/manifest.json',
-    'src/html/peter_schmalfeldt.vcf',
-    'src/html/oembed.*',
-    'src/html/*.txt'
-  ]).pipe(gulp.dest('dist/'))
+  gulp
+    .src([
+      'src/html/.htaccess',
+      'src/html/favicon.ico',
+      'src/html/manifest.json',
+      'src/html/peter_schmalfeldt.vcf',
+      'src/html/oembed.*',
+      'src/html/*.txt'
+    ])
+    .pipe(gulp.dest('dist/'))
   gulp.src(['src/assets/fonts/**/*']).pipe(gulp.dest('dist/assets/fonts/'))
   done()
 })
@@ -152,27 +105,31 @@ gulp.task('copy-images', (done) => {
 
 // Compile Service Worker
 gulp.task('compile-sw', (done) => {
-  fancyLog(`Creating '${colors.cyan('compile-sw')}'... ${colors.dim('( This may take a second )')}`)
+  fancyLog(
+    `Creating '${colors.cyan('compile-sw')}'... ${colors.dim(
+      '( This may take a second )'
+    )}`
+  )
 
   const buildSW = () => {
     return workboxBuild.generateSW({
       mode: process.env.NODE_ENV,
       globDirectory: './dist',
-      globPatterns: [
-        '**/*.{html,json,js,css}',
-      ],
+      globPatterns: ['**/*.{html,json,js,css}'],
       swDest: './dist/sw.js',
-      runtimeCaching: [{
-        urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'images'
-        },
-      }],
-    });
-  };
+      runtimeCaching: [
+        {
+          urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images'
+          }
+        }
+      ]
+    })
+  }
 
-  setTimeout(function(){
+  setTimeout(function () {
     buildSW()
     done()
   }, 5000)
@@ -180,7 +137,8 @@ gulp.task('compile-sw', (done) => {
 
 // Copy Theme js to production site
 gulp.task('copy-js', (done) => {
-  gulp.src('src/js/**/*.js')
+  gulp
+    .src('src/js/**/*.js')
     .pipe(uglify())
     .pipe(concat(`app.${version}.min.js`))
     .pipe(gulp.dest('dist/assets/js/'))
@@ -211,23 +169,23 @@ gulp.task('server', (done) => {
 
 // Generate Sitemap
 gulp.task('sitemap', (done) => {
-  gulp.src([
-    'dist/*.html',
-    'dist/**/*.html'
-  ], {
-    read: false
-  })
-  .pipe(sitemap({
-    siteUrl: 'https://peterschmalfeldt.com',
-    changefreq: 'monthly',
-    lastmod (file) {
-      return (file && file.ctime) ? file.ctime.toString().trim() : Date.now()
-    },
-    getLoc (siteUrl, loc, entry) {
-      return loc.replace(/\.\w+$/, '')
-    }
-  }))
-  .pipe(gulp.dest('./dist'))
+  gulp
+    .src(['dist/*.html', 'dist/**/*.html'], {
+      read: false
+    })
+    .pipe(
+      sitemap({
+        siteUrl: 'https://peterschmalfeldt.com',
+        changefreq: 'monthly',
+        lastmod (file) {
+          return file && file.ctime ? file.ctime.toString().trim() : Date.now()
+        },
+        getLoc (siteUrl, loc, entry) {
+          return loc.replace(/\.\w+$/, '')
+        }
+      })
+    )
+    .pipe(gulp.dest('./dist'))
 
   done()
 })
@@ -236,10 +194,21 @@ gulp.task('lint-html', (done) => {
   const reporter = (filepath, issues) => {
     if (issues.length > 0) {
       issues.forEach(function (issue) {
-        fancyLog(colors.cyan('[lint-html] ') + colors.white(filepath.replace(__dirname, '.') + ' [' + issue.line + ':' + issue.column + '] ') + colors.red('(' + issue.code + ') ' + issue.msg))
+        fancyLog(
+          colors.cyan('[lint-html] ') +
+            colors.white(
+              filepath.replace(__dirname, '.') +
+                ' [' +
+                issue.line +
+                ':' +
+                issue.column +
+                '] '
+            ) +
+            colors.red('(' + issue.code + ') ' + issue.msg)
+        )
       })
 
-      process.exitCode = 1;
+      process.exitCode = 1
     }
   }
 
@@ -260,8 +229,8 @@ gulp.task('lint-html', (done) => {
       'label-req-for': false,
       'line-end-style': false,
       'line-no-trailing-whitespace': false,
-      'maxerr': 3,
-      'raw-ignore-regex': /\<\!--[^]*?--\>/,
+      maxerr: 3,
+      'raw-ignore-regex': /<!--[^]*?-->/,
       'spec-char-escape': false,
       'tag-bans': [],
       'tag-close': true,
@@ -270,25 +239,120 @@ gulp.task('lint-html', (done) => {
     }
   }
 
-  gulp.src('dist/**/*.html')
-  .pipe(htmllint(options, reporter))
+  gulp.src('dist/**/*.html').pipe(htmllint(options, reporter))
+
+  done()
+})
+
+// Compile Theme Scss
+gulp.task('compile-scss', (done) => {
+  const processors = [
+    mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: '.is-true-hover ' }),
+    autoprefixer({
+      overrideBrowserslist: [
+        'Chrome >= 45',
+        'Firefox ESR',
+        'Edge >= 12',
+        'Explorer >= 10',
+        'iOS >= 9',
+        'Safari >= 9',
+        'Android >= 4.4',
+        'Opera >= 30'
+      ]
+    })
+  ]
+
+  if (process.env.NODE_ENV === 'production') {
+    gulp
+      .src('./src/scss/style.scss')
+      .pipe(sass(scssOptions).on('error', sass.logError))
+      .pipe(postcss(processors))
+      .pipe(concat('style.css'))
+      .pipe(gulp.dest('src/assets/css/'))
+  } else {
+    gulp
+      .src('./src/scss/style.scss')
+      .pipe(sourcemaps.init())
+      .pipe(sass(scssOptions).on('error', sass.logError))
+      .pipe(postcss(processors))
+      .pipe(sourcemaps.write())
+      .pipe(concat('style.css'))
+      .pipe(gulp.dest('src/assets/css/'))
+  }
+
+  if (browser) {
+    browser.reload()
+  }
+
+  done()
+})
+
+// Compile css from node modules
+gulp.task('compile-css', (done) => {
+  gulp
+    .src([
+      'src/assets/css/bootstrap.css',
+      'src/assets/css/ionicons.css',
+      'src/assets/css/style.css'
+    ])
+    .pipe(csso())
+    .pipe(concat(`style.${version}.min.css`))
+    .pipe(gulp.dest('build'))
+
+  done()
+})
+
+gulp.task('purge-css', (done) => {
+  gulp
+    .src(['build/*.css'])
+    .pipe(
+      purgecss({
+        content: ['dist/*.html']
+      })
+    )
+    .pipe(gulp.dest('dist/assets/css/'))
 
   done()
 })
 
 // Watch files for changes
 gulp.task('watch', (done) => {
-  gulp.watch('src/scss/*', gulp.series('compile-html:reset','compile-html', 'compile-scss'))
-  gulp.watch('src/js/**/*', gulp.series('compile-html:reset','compile-html', 'copy-js'))
+  gulp.watch(
+    'src/scss/*',
+    gulp.series('compile-html:reset', 'compile-html', 'compile-scss', 'purge-css')
+  )
+  gulp.watch(
+    'src/js/**/*',
+    gulp.series('compile-html:reset', 'compile-html', 'copy-js')
+  )
   gulp.watch('src/images/**/*', gulp.series('copy-images'))
   gulp.watch('src/html/pages/**/*', gulp.series('compile-html'))
-  gulp.watch(['src/html/{layouts,includes,helpers,data}/**/*'], gulp.series('compile-html:reset','compile-html'))
-  gulp.watch(['src/html/{layouts,partials,helpers,data}/**/*'], gulp.series(panini.refresh))
+  gulp.watch(
+    ['src/html/{layouts,includes,helpers,data}/**/*'],
+    gulp.series('compile-html:reset', 'compile-html')
+  )
+  gulp.watch(
+    ['src/html/{layouts,partials,helpers,data}/**/*'],
+    gulp.series(panini.refresh)
+  )
 
   done()
 })
 
 // Main Gulp Tasks
-gulp.task('build', gulp.series('clean', 'copy', 'compile-js', 'compile-css', 'copy-js', 'compile-scss', 'compile-html', 'copy-images', 'compile-sw'))
+gulp.task(
+  'build',
+  gulp.series(
+    'clean',
+    'copy',
+    'compile-scss',
+    'compile-css',
+    'compile-js',
+    'copy-js',
+    'compile-html',
+    'copy-images',
+    'compile-sw',
+    'purge-css'
+  )
+)
 gulp.task('default', gulp.series('build', 'watch', 'server'))
-
