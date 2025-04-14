@@ -130,12 +130,12 @@
     menuTrigger: function () {
       const $header = $('#header')
       const $mainMenu = $('#main-menu')
-      const isOpen = $(this).hasClass('open')
+      const isOpen = !$(this).hasClass('closed')
 
-      $header.toggleClass('display-menu')
-      $mainMenu.toggleClass('display-menu')
+      $header.toggleClass('hide-menu')
+      $mainMenu.toggleClass('hide-menu')
 
-      $(this).toggleClass('open')
+      $(this).toggleClass('closed')
       $(this).attr('aria-expanded', !isOpen)
     },
 

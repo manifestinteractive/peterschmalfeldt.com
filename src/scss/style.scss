@@ -307,7 +307,7 @@ blockquote {
           }
         }
 
-        &.open {
+        &:not(.closed) {
           span {
             background-color: transparent;
 
@@ -864,7 +864,7 @@ h2.title + div.cta > p, h2.title > div > p > a {
         border-bottom: 4px solid #dee5eb;
       }
 
-      &.display-menu ul {
+      &:not(.hide-menu) ul {
         display: block;
       }
 
