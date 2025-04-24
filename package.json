@@ -1,6 +1,6 @@
 {
   "name": "my-website",
-  "version": "1.3.5",
+  "version": "1.3.8",
   "description": "My Website",
   "main": "gulpfile.js",
   "license": "unlicensed",
@@ -53,6 +53,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-htmllint": "0.0.19",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^=9.0.0",
     "gulp-purgecss": "^7.0.2",
     "gulp-sass": "^5.0.0",

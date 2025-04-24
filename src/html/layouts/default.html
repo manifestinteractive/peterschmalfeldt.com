@@ -77,7 +77,7 @@
     <style>.pageloader {display:none;backdrop-filter: blur(4px);}body.loading .pageloader {display:flex;justify-content:center;position:fixed;top:0;left:0;height:100%;width:100%;z-index:100000;overflow:hidden;pointer-events:none;background-color:rgba(255, 255, 255, 0.80);transform:translateZ(1px);flex-direction: column;justify-content:center;align-items:center;}.loader {width: 50px;aspect-ratio: 1;border-radius: 50%;border: 8px solid transparent;border-right-color: rgba(12, 24, 50, 0.85);;position: relative;animation: loading 1s infinite linear;}.loader:before, .loader:after {content: "";position: absolute;inset: -8px;border-radius: 50%;border: inherit;animation: inherit;animation-duration: 2s;}.loader:after {animation-duration: 4s;}@keyframes loading {100% {transform: rotate(1turn)}}@media (prefers-color-scheme: dark) {html,body{background-color: #0c1832;}body.loading .pageloader{background-color: rgba(12, 24, 50, 0.80);}.loader {border-right-color: rgba(255, 255, 255, 0.85);}}</style>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ package.assetPath }}css/style.{{ package.version }}.min.css{{ package.cacheBreak }}">
+    <link rel="stylesheet" href="{{ package.assetPath }}css/style{{ package.buildVersion }}.min.css{{ package.cacheBreak }}">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ package.analytics }}"></script>
@@ -128,49 +128,7 @@
 
     <!-- Scripts -->
     <script>var PS_ENV = '{{ package.env }}';</script>
-    <script defer src="{{ package.assetPath }}js/plugins.{{package.version}}.min.js{{ package.cacheBreak }}"></script>
-    <script defer src="{{ package.assetPath }}js/app.{{package.version}}.min.js{{ package.cacheBreak }}"></script>
-    <script>
-      if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
-        const listenForWaitingServiceWorker = (reg, callback = () => {}) => {
-          function awaitStateChange() {
-            reg.installing.addEventListener('statechange', function () {
-              if (this.state === 'installed') callback(reg)
-            })
-          }
-          if (!reg) return
-          if (reg.waiting) return callback(reg)
-          if (reg.installing) awaitStateChange()
-          reg.addEventListener('updatefound', awaitStateChange)
-        }
-
-        navigator.serviceWorker
-          .register('/sw.js')
-          .then((registration) => {
-            listenForWaitingServiceWorker(registration)
-
-            registration.onupdatefound = () => {
-              const installingWorker = registration.installing
-              if (installingWorker == null) {
-                return
-              }
-              installingWorker.onstatechange = () => {
-                if (installingWorker.state === 'installed') {
-                  if (navigator.serviceWorker.controller) {
-                    console.log(
-                      'New content is available and will be used when all tabs for this page are closed.'
-                    )
-                  } else {
-                    console.log('Content is cached for offline use.')
-                  }
-                }
-              }
-            }
-          })
-          .catch((error) => {
-            console.error('Error during service worker registration:', error)
-          })
-      }
-    </script>
+    <script defer src="{{ package.assetPath }}js/plugins{{ package.buildVersion }}.min.js{{ package.cacheBreak }}"></script>
+    <script defer src="{{ package.assetPath }}js/app{{ package.buildVersion }}.min.js{{ package.cacheBreak }}"></script>
   </body>
 </html>

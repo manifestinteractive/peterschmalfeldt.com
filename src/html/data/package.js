@@ -8,6 +8,7 @@ module.exports = {
   base: 'https://peterschmalfeldt.com',
   assetPath: '/assets/',
   cacheBreak: isProd ? '' : `?ac${new Date().getTime()}`,
+  buildVersion: isProd ? '' : `.${version}`,
   currentYear: date.getFullYear(),
   currentDate: date.toISOString().slice(0, 10),
   publishedDate: date.toISOString(),

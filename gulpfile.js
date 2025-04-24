@@ -5,19 +5,20 @@ const concat = require('gulp-concat')
 const csso = require('gulp-csso')
 const fancyLog = require('fancy-log')
 const gulp = require('gulp')
+const gulpSass = require('gulp-sass')
 const htmllint = require('gulp-htmllint')
+const minHTML = require('gulp-htmlmin')
 const mq4HoverShim = require('mq4-hover-shim')
+const nodeSass = require('node-sass')
 const panini = require('panini')
 const postcss = require('gulp-postcss')
+const purgecss = require('gulp-purgecss')
 const rimraf = require('rimraf').sync
-const gulpSass = require('gulp-sass')
-const nodeSass = require('node-sass')
 const sitemap = require('gulp-sitemap')
 const sourcemaps = require('gulp-sourcemaps')
 const uglify = require('gulp-uglify')
 const version = require('./package.json').version
 const workboxBuild = require('workbox-build')
-const purgecss = require('gulp-purgecss')
 
 const assetsPath = 'src/assets/'
 const port = process.env.RVW_SERVER_PORT || 8081
@@ -65,13 +66,14 @@ gulp.task('compile-html:reset', (done) => {
 // Compile js from node modules
 // @TODO: Clean up unused code once we finish the site
 gulp.task('compile-js', (done) => {
+  const fileName = process.env.NODE_ENV === 'production' ? 'plugins.min.js' : `plugins.${version}.min.js`
   gulp
     .src([
       `${assetsPath}/js/jquery.min.js`,
       `${assetsPath}/js/overscroll.min.js`
     ])
     .pipe(uglify())
-    .pipe(concat(`plugins.${version}.min.js`))
+    .pipe(concat(fileName))
     .pipe(gulp.dest('dist/assets/js/'))
 
   if (browser) {
@@ -137,10 +139,11 @@ gulp.task('compile-sw', (done) => {
 
 // Copy Theme js to production site
 gulp.task('copy-js', (done) => {
+  const fileName = process.env.NODE_ENV === 'production' ? 'app.min.js' : `app.${version}.min.js`
   gulp
     .src('src/js/**/*.js')
     .pipe(uglify())
-    .pipe(concat(`app.${version}.min.js`))
+    .pipe(concat(fileName))
     .pipe(gulp.dest('dist/assets/js/'))
 
   if (browser) {
@@ -289,6 +292,7 @@ gulp.task('compile-scss', (done) => {
 
 // Compile css from node modules
 gulp.task('compile-css', (done) => {
+  const fileName = process.env.NODE_ENV === 'production' ? 'style.min.css' : `style.${version}.min.css`
   gulp
     .src([
       'src/assets/css/bootstrap.css',
@@ -296,7 +300,7 @@ gulp.task('compile-css', (done) => {
       'src/assets/css/style.css'
     ])
     .pipe(csso())
-    .pipe(concat(`style.${version}.min.css`))
+    .pipe(concat(fileName))
     .pipe(gulp.dest('build'))
 
   done()
@@ -311,6 +315,23 @@ gulp.task('purge-css', (done) => {
       })
     )
     .pipe(gulp.dest('dist/assets/css/'))
+
+  done()
+})
+
+gulp.task('min-html', (done) => {
+  if (process.env.NODE_ENV === 'production') {
+    gulp
+      .src('dist/*.html')
+      .pipe(minHTML({
+        collapseWhitespace: true,
+        minifyJS: true,
+        minifyCSS: true,
+        removeComments: true,
+        maxLineLength: 10000
+      }))
+      .pipe(gulp.dest('dist'))
+  }
 
   done()
 })
@@ -352,7 +373,8 @@ gulp.task(
     'compile-html',
     'copy-images',
     'compile-sw',
-    'purge-css'
+    'purge-css',
+    'min-html'
   )
 )
 gulp.task('default', gulp.series('build', 'watch', 'server'))
