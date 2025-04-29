@@ -316,7 +316,7 @@
                   'New content is available and will be used when all tabs for this page are closed.'
                 )
                 if (confirm('WEBSITE UPDATE:\n\nMy website has changed since the last time you were here. Would you like to reload the page to see the latest?')) {
-                  window.location.reload()
+                  window.location.reload(true)
                 }
               } else {
                 console.log('Content is cached for offline use.')
