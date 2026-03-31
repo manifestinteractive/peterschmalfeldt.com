@@ -287,46 +287,6 @@
   })()
 
   if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
-    const listenForWaitingServiceWorker = (reg, callback = () => {}) => {
-      function awaitStateChange () {
-        reg.installing.addEventListener('statechange', function () {
-          if (this.state === 'installed') callback(reg)
-        })
-      }
-      if (!reg) return
-      if (reg.waiting) return callback(reg)
-      if (reg.installing) awaitStateChange()
-      reg.addEventListener('updatefound', awaitStateChange)
-    }
-
-    navigator.serviceWorker
-      .register('/sw.js')
-      .then((registration) => {
-        listenForWaitingServiceWorker(registration)
-
-        registration.onupdatefound = () => {
-          const installingWorker = registration.installing
-          if (installingWorker == null) {
-            return
-          }
-          installingWorker.onstatechange = () => {
-            if (installingWorker.state === 'installed') {
-              if (navigator.serviceWorker.controller) {
-                console.log(
-                  'New content is available and will be used when all tabs for this page are closed.'
-                )
-                if (confirm('WEBSITE UPDATE:\n\nMy website has changed since the last time you were here. Would you like to reload the page to see the latest?')) {
-                  window.location.reload(true)
-                }
-              } else {
-                console.log('Content is cached for offline use.')
-              }
-            }
-          }
-        }
-      })
-      .catch((error) => {
-        console.error('Error during service worker registration:', error)
-      })
+    navigator.serviceWorker.register('/sw.js')
   }
 })()

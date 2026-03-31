@@ -1,0 +1,32 @@
+# Project-specific Codex settings for the VS Code extension.
+project_root_markers = [".git", "AGENTS.md"]
+file_opener = "vscode"
+
+# Keep repo work local and predictable inside VS Code.
+approval_policy = "on-failure"
+sandbox_mode = "workspace-write"
+web_search = "live"
+personality = "pragmatic"
+model_reasoning_effort = "medium"
+
+# Repo-local guidance layered on top of AGENTS.md for this project.
+developer_instructions = """
+- This repository is a Gulp + Panini static site. Do not introduce framework migrations or toolchain upgrades unless the user asks for them explicitly.
+- Use the Node version from .nvmrc when running commands.
+- Prefer the existing npm scripts for development, build, and lint tasks.
+- Treat build/ and dist/ as generated output unless the user explicitly asks to edit generated files.
+"""
+
+# Read-only OpenAI docs MCP for current Codex/OpenAI documentation.
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+# Reuse the project's local ESLint install for targeted linting from Codex.
+[mcp_servers.eslint]
+command = "npx"
+args = ["eslint", "--mcp"]
+
+# Browser automation for local site verification when needed.
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest"]
