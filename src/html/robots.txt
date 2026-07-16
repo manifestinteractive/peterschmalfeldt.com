@@ -2,5 +2,4 @@ User-agent: *
 
 Sitemap: https://peterschmalfeldt.com/sitemap.xml
 
-Disallow: /assets/images/peter.png
 Disallow: /assets/images/testimonials/*.jpg

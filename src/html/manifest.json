@@ -1,9 +1,9 @@
 {
   "app_name": "Schmalfeldt",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "background_color": "#0c1832",
   "categories": ["business", "personalization", "productivity", "utilities"],
-  "description": "Senior Full-Stack Engineer, Technical Lead, Solutions Architect, and AI Developer.",
+  "description": "AI and technical consulting, custom AI tools, web applications, automations, and integrations for individuals and teams.",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
   "icons": [

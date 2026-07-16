@@ -14,6 +14,7 @@
 - `npm run build:staging`
 - `npm run build:production`
 - `npm test`
+- `npm run test:a11y` audits the running site at `http://localhost:8081` with Playwright and Axe.
 - `npm run lint:js`
 - `npm run lint:html`
 
@@ -36,9 +37,18 @@
 - Keep changes backward compatible unless the user explicitly approves broader refactors.
 - Preserve the existing ESLint Standard style and the current HTML/layout structure.
 - Do not upgrade Node, npm, Gulp, Sass, or major build dependencies unless the user explicitly requests that work.
+- For visible UI or interaction changes, verify representative desktop and mobile layouts with Playwright. For accessibility-sensitive changes, run `npm run test:a11y` while the development server is running.
 
 ## Skills
 
 - Repo-local Codex skills live under `.agents/skills/`.
 - For copywriting, SEO metadata, headings, CTAs, summaries, or positioning updates for peterschmalfeldt.com, use the `peter-site-copy` skill first.
 - Do not use `peter-site-copy` for code-only changes that do not affect site messaging.
+- For accessibility audits or changes to navigation, controls, testimonials, dialogs, focus behavior, or responsive interactions, use the `site-accessibility-qa` skill.
+
+## AI Scaffolding
+
+- `.codex/config.toml` contains trusted-repository Codex settings and MCP servers.
+- `.vscode/mcp.json` exposes the shared ESLint and Playwright MCP servers to compatible VS Code agent clients.
+- `.agents/skills/` contains reusable repository workflows. Keep deterministic scripts with the skill that owns them and expose developer-facing checks through npm scripts when useful.
+- Do not duplicate repo-specific behavior in personal configuration when it can be checked into one of these shared surfaces.

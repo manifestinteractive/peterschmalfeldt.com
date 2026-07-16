@@ -1,0 +1,21 @@
+{
+  "servers": {
+    "eslint": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@eslint/mcp@latest"
+      ]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--isolated"
+      ]
+    }
+  }
+}

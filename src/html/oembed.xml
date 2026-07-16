@@ -1,20 +1,19 @@
-
 <?xml version="1.0"?>
 <oembed>
     <version>1.0</version>
     <type>rich</type>
     <provider_name>Peter Schmalfeldt</provider_name>
-    <provider_url>https://peterschmalfeldt.com</provider_url>
+    <provider_url>https://peterschmalfeldt.com/</provider_url>
     <author_name>Peter Schmalfeldt</author_name>
-    <author_url>https://peterschmalfeldt.com</author_url>
-    <title>Peter Schmalfeldt | Senior Full-Stack Engineer, Technical Lead, Solutions Architect, and AI Developer.</title>
+    <author_url>https://peterschmalfeldt.com/</author_url>
+    <title>AI Consulting &amp; Custom Web Applications | Peter Schmalfeldt</title>
     <width>375</width>
     <height>700</height>
-    <html>&lt;iframe sandbox="allow-scripts" security="restricted" src="https://peterschmalfeldt.com" width="700" height="825" scrolling="yes" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</html>
-    <description>Senior Full-Stack Engineer, Technical Lead, Solutions Architect, and AI Developer.</description>
+    <html>&lt;iframe sandbox="allow-scripts" security="restricted" src="https://peterschmalfeldt.com/" width="700" height="825" scrolling="yes" allowfullscreen&gt;&lt;/iframe&gt;</html>
+    <description>Peter Schmalfeldt provides AI and technical consulting and builds custom AI tools, web applications, automations, and integrations for individuals and teams.</description>
     <thumbnail_url>https://peterschmalfeldt.com/assets/images/card-og.jpg</thumbnail_url>
-    <thumbnail_width>640</thumbnail_width>
-    <thumbnail_height>320</thumbnail_height>
+    <thumbnail_width>1200</thumbnail_width>
+    <thumbnail_height>630</thumbnail_height>
     <referrer/>
     <cache_age>3600</cache_age>
 </oembed>

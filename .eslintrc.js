@@ -20,7 +20,6 @@ module.exports = {
     'jQuery': true,
     'PS_CAPTCHA': true,
     'PS_ENV': true,
-    'PS_READY': true,
-    'Overscroll': true
+    'PS_READY': true
   }
 }

@@ -19,14 +19,19 @@ developer_instructions = """
 
 # Read-only OpenAI docs MCP for current Codex/OpenAI documentation.
 [mcp_servers.openaiDeveloperDocs]
+enabled = true
 url = "https://developers.openai.com/mcp"
 
-# Reuse the project's local ESLint install for targeted linting from Codex.
+# Use the official ESLint MCP server for targeted linting from Codex.
 [mcp_servers.eslint]
+enabled = true
 command = "npx"
-args = ["eslint", "--mcp"]
+args = ["-y", "@eslint/mcp@latest"]
+startup_timeout_sec = 30
 
 # Browser automation for local site verification when needed.
 [mcp_servers.playwright]
+enabled = true
 command = "npx"
-args = ["-y", "@playwright/mcp@latest"]
+args = ["-y", "@playwright/mcp@latest", "--isolated"]
+startup_timeout_sec = 30

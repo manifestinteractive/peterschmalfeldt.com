@@ -1,0 +1,9 @@
+interface:
+  display_name: "Site Accessibility QA"
+  short_description: "Audit the live site with Playwright and Axe"
+  default_prompt: "Use $site-accessibility-qa to audit the local site and report accessibility regressions."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "playwright"
+      description: "Repository-configured browser automation for visual and interaction checks"

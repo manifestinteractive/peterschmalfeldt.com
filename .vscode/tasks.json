@@ -84,6 +84,27 @@
         "clear": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Project: Test Accessibility",
+      "type": "shell",
+      "command": "npm run test:a11y",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "/bin/zsh",
+          "args": [
+            "-l",
+            "-c"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
     }
   ]
 }
