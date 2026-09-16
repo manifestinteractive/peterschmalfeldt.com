@@ -4,6 +4,9 @@ const colors = require('ansi-colors')
 const concat = require('gulp-concat')
 const csso = require('gulp-csso')
 const fancyLog = require('fancy-log')
+const fs = require('fs')
+const path = require('path')
+const { readProfile, buildProfileContent } = require('./scripts/profile-content')
 const gulp = require('gulp')
 const gulpSass = require('gulp-sass')
 const htmllint = require('gulp-htmllint')
@@ -87,6 +90,11 @@ gulp.task('compile-js', () => {
     .on('finish', browser.reload)
 })
 
+gulp.task('profile-content', (done) => {
+  buildProfileContent()
+  done()
+})
+
 // Copy static assets
 gulp.task('copy', () => {
   const staticFiles = gulp
@@ -124,7 +132,7 @@ gulp.task('compile-sw', () => {
     return workboxBuild.generateSW({
       mode: process.env.NODE_ENV,
       globDirectory: './dist',
-      globPatterns: ['**/*.{html,json,js,css}'],
+      globPatterns: ['**/*.{html,json,js,css,md,txt}'],
       swDest: './dist/sw.js',
       runtimeCaching: [
         {
@@ -184,10 +192,13 @@ gulp.task('sitemap', () => {
         siteUrl: 'https://peterschmalfeldt.com',
         changefreq: 'monthly',
         lastmod (file) {
-          return file && file.ctime ? file.ctime.toString().trim() : Date.now()
+          const page = fs.readFileSync(path.join('src/html/pages', file.relative), 'utf8')
+          const modified = page.match(/^modified: (\d{4}-\d{2}-\d{2})$/m)
+          if (!modified) throw new Error('Add a content modification date to ' + file.relative)
+          return [modified[1], readProfile().modified_on].sort().pop()
         },
         getLoc (siteUrl, loc, entry) {
-          return loc.replace(/\.\w+$/, '')
+          return loc.replace(/index\.html$/, '')
         }
       })
     )
@@ -323,7 +334,8 @@ gulp.task('min-html', () => {
         minifyJS: true,
         minifyCSS: true,
         removeComments: true,
-        maxLineLength: 10000
+        // Artificial line wrapping can look like invalid indentation to HTML lint.
+        maxLineLength: 0
       }))
       .pipe(gulp.dest('dist'))
   }
@@ -342,10 +354,10 @@ gulp.task('watch', (done) => {
     gulp.series('compile-html:reset', 'compile-html', 'copy-js')
   )
   gulp.watch('src/images/**/*', gulp.series('copy-images'))
-  gulp.watch('src/html/pages/**/*', gulp.series('compile-html'))
+  gulp.watch('src/html/pages/**/*', gulp.series('compile-html', 'sitemap'))
   gulp.watch(
     ['src/html/{layouts,includes,helpers,data}/**/*'],
-    gulp.series('compile-html:reset', 'compile-html')
+    gulp.series('compile-html:reset', 'compile-html', 'profile-content', 'sitemap')
   )
   gulp.watch(
     ['src/html/{layouts,partials,helpers,data}/**/*'],
@@ -366,6 +378,8 @@ gulp.task(
     'compile-js',
     'copy-js',
     'compile-html',
+    'profile-content',
+    'sitemap',
     'copy-images',
     'compile-sw',
     'purge-css',

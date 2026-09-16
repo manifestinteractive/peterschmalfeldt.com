@@ -1,3 +1,5 @@
+# Public pages are crawlable by search and AI agents.
+# The only restriction protects testimonial photos.
 User-agent: *
 
 Sitemap: https://peterschmalfeldt.com/sitemap.xml

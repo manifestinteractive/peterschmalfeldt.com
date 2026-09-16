@@ -13,27 +13,27 @@
 
         <ul id="menu">
           <li>
-            <a href="#consulting" data-track data-category="Nav" data-action="Header" data-label="Consulting">
+            <a href="{{ homePrefix }}#consulting" data-track data-category="Nav" data-action="Header" data-label="Consulting">
               Consulting
             </a>
           </li>
           <li>
-            <a href="#services" data-track data-category="Nav" data-action="Header" data-label="Services">
+            <a href="{{ homePrefix }}#services" data-track data-category="Nav" data-action="Header" data-label="Services">
               Services
             </a>
           </li>
           <li>
-            <a href="#process" data-track data-category="Nav" data-action="Header" data-label="Process">
+            <a href="{{ homePrefix }}#process" data-track data-category="Nav" data-action="Header" data-label="Process">
               Process
             </a>
           </li>
           <li>
-            <a href="#contact" data-track data-category="Nav" data-action="Header" data-label="Contact">
+            <a href="{{ homePrefix }}#contact" data-track data-category="Nav" data-action="Header" data-label="Contact">
               Contact
             </a>
           </li>
           <li>
-            <a href="https://resume.peterschmalfeldt.com" class="resume" target="_blank" rel="noopener nofollow" data-track data-category="Nav" data-action="Header" data-label="Resume" title="Visit My Resume">
+            <a href="/resume.html" class="resume"{{#if isResume}} aria-current="page"{{/if}} data-track data-category="Nav" data-action="Header" data-label="Resume" title="Visit My Resume">
               Resume
             </a>
           </li>

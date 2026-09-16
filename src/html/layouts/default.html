@@ -66,6 +66,9 @@
     <!-- Canonical -->
     <link rel="canonical" href="{{ package.base }}{{ canonical }}">
 
+    <link rel="alternate" type="application/json" href="/profile.json" title="Professional profile as JSON">
+    <link rel="alternate" type="text/markdown" href="/profile.md" title="Professional profile as Markdown">
+
     <!-- Short Link -->
     <link rel="shortlink" href="{{ package.base }}/" />
 
@@ -125,10 +128,10 @@
           </button>
         </div>
         <div class="calendly-modal-frame">
-          <iframe id="calendly-frame" src="about:blank" data-src="https://calendly.com/peterschmalfeldt?embed_type=Inline" title="Schedule time with Peter Schmalfeldt"></iframe>
+          <iframe id="calendly-frame" src="about:blank" data-src="{{ profile.links.booking }}?embed_type=Inline" title="Schedule time with Peter Schmalfeldt"></iframe>
         </div>
         <div class="calendly-modal-footer">
-          <a href="https://calendly.com/peterschmalfeldt" target="_blank" rel="noopener" data-track data-category="Scheduling" data-action="Open" data-label="Open Calendly in New Tab">Open Calendly in a new tab</a>
+          <a href="{{ profile.links.booking }}" target="_blank" rel="noopener" data-track data-category="Scheduling" data-action="Open" data-label="Open Calendly in New Tab">Open Calendly in a new tab</a>
         </div>
       </div>
     </div>

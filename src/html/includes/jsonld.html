@@ -1,32 +1,4 @@
-<script type="application/ld+json">{{#minify-json}}
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "{{ package.base }}/#person",
-  "url": "{{ package.base }}/",
-  "name": "Peter Schmalfeldt",
-  "givenName": "Peter",
-  "familyName": "Schmalfeldt",
-  "email": "me@peterschmalfeldt.com",
-  "image": "https://resume.peterschmalfeldt.com/head-shot.jpg",
-  "jobTitle": "Senior Full-Stack & AI Engineer and Solutions Architect",
-  "description": "Senior AI Engineer, full-stack developer, and Solutions Architect who works with teams to build custom AI tools and web applications.",
-  "knowsAbout": [
-    "Custom Web Application Development",
-    "Full-Stack Development",
-    "Artificial Intelligence",
-    "AI Application Development",
-    "Solutions Architecture",
-    "Technical Consulting",
-    "Rapid Prototyping",
-    "Ecommerce Development",
-    "Salesforce Commerce Cloud",
-    "API Integrations",
-    "Accessibility"
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/in/peter-schmalfeldt",
-    "https://github.com/manifestinteractive"
-  ]
-}
-{{/minify-json}}</script>
+<script type="application/ld+json">{{{person-schema profile isResume}}}</script>
+<script id="profile-data" type="application/json">{{{json profile}}}</script>
+
+<script id="projects-data" type="application/json">{{{json projects}}}</script>

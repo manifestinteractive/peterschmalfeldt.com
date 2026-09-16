@@ -1,0 +1,42 @@
+---
+layout: default
+modified: 2026-09-15
+title: Project Catalog | Peter Schmalfeldt
+description: Public projects and contributions by Peter Schmalfeldt, including Police Scorecard, Find By Color, and Salesforce Commerce Cloud tools.
+card_image: /assets/images/card-og.jpg
+canonical: /projects.html
+homePrefix: /
+---
+
+<div class="container resume-page projects-page">
+  <section class="resume-intro" aria-labelledby="projects-title">
+    <p class="section-label">Projects</p>
+    <h1 id="projects-title">My projects and contributions</h1>
+    <p>A selection of my public projects, from AI experiments to developer tools and civic data platforms.</p>
+    <p>Projects are ordered by my most recent public commit on each repository's default branch.</p>
+    <p>Reviewed <time datetime="{{ projects.reviewed_on }}">{{ projects.reviewed_on }}</time>.</p>
+    <p><a href="/resume.html">Resume</a> | <a href="/projects.json">JSON catalog</a> | <a href="/projects.md">Markdown catalog</a></p>
+  </section>
+  <nav class="resume-toc" aria-label="Project sections">
+    <a href="#current-projects">Projects</a>
+    <a href="#archived-projects">Archived</a>
+  </nav>
+  {{#each (project-groups projects.projects)}}
+  <section id="{{ id }}" class="page-section" aria-labelledby="{{ id }}-title">
+    <h2 id="{{ id }}-title">{{ title }}</h2>
+    {{#each projects}}
+    <article class="resume-entry" aria-labelledby="project-{{ id }}">
+      <h3 id="project-{{ id }}"><a href="{{ repository_url }}" target="_blank" rel="noopener nofollow" data-track data-category="Nav" data-action="Projects" data-label="{{ name }}">{{ name }}</a></h3>
+      <p><a href="{{ organization_url }}" target="_blank" rel="noopener nofollow" data-track data-category="Nav" data-action="Projects" data-label="{{ organization }}">{{ organization }}</a> | Last Contribution: <a href="{{ last_contribution_url }}" target="_blank" rel="noopener nofollow" data-track data-category="Nav" data-action="Projects" data-label="{{ last_contribution }}"><time datetime="{{ last_contribution }}">{{ last_contribution }}</time></a></p>
+      <p>{{ summary }}</p>
+      <p><strong>Project type:</strong> {{#each project_types}}{{ this }}{{#unless @last}}, {{/unless}}{{/each}}</p>
+      <div class="project-stack">
+        {{#each technology_groups}}
+        <p><strong>{{ category }}:</strong> {{#each items}}{{ this }}{{#unless @last}}, {{/unless}}{{/each}}</p>
+        {{/each}}
+      </div>
+    </article>
+    {{/each}}
+  </section>
+  {{/each}}
+</div>

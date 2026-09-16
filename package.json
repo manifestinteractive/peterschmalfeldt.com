@@ -1,6 +1,6 @@
 {
   "name": "my-website",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "My Website",
   "main": "gulpfile.js",
   "license": "unlicensed",
@@ -25,11 +25,13 @@
     "preversion": "npm run build:production",
     "postversion": "git push && git push --tags",
     "start": "cross-env NODE_ENV=development gulp",
-    "build:production": "cross-env NODE_ENV=production gulp build && gulp sitemap && npm run -s test",
+    "build:production": "cross-env NODE_ENV=production gulp build && npm run -s test",
     "build:staging": "cross-env NODE_ENV=staging gulp build && npm run -s test",
     "build:dev": "cross-env NODE_ENV=development gulp build && npm run -s test",
-    "test": "npm run -s lint:js && npm run -s lint:html",
+    "test": "npm run -s lint:js && npm run -s lint:html && npm run -s test:profile",
     "test:a11y": "node .agents/skills/site-accessibility-qa/scripts/audit.js",
+    "test:profile": "node scripts/test-profile.js",
+    "test:webmcp": "node scripts/test-webmcp.js",
     "lint:js": "eslint --ext .js src --fix && echo '\n【ツ】JAVASCRIPT PERFECTION !!!\n'",
     "lint:html": "gulp lint-html && echo '\n【ツ】HTML PERFECTION !!!\n'",
     "help": "node node_modules/npm-scripts-help"
@@ -93,7 +95,7 @@
       "description": "Compiles Website for Staging to ./dist on Local Server"
     },
     "test": {
-      "description": "Executes both npm run lint:js && npm run lint:html"
+      "description": "Checks JavaScript, HTML, and generated profile consistency"
     },
     "test:a11y": {
       "description": "Audits the running site with Playwright, Axe, and project-specific accessibility checks"
@@ -105,6 +107,12 @@
     "lint:html": {
       "script": "gulp lint-html",
       "description": "Verifies all HTML Code used in ./src is free from errors"
+    },
+    "test:profile": {
+      "description": "Checks generated profiles, resume skills, source links, and sitemap dates"
+    },
+    "test:webmcp": {
+      "description": "Checks WebMCP registration and tool results in Chrome"
     }
   }
 }

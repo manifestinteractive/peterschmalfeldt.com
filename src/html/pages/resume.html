@@ -1,0 +1,103 @@
+---
+layout: default
+modified: 2026-09-15
+title: Resume | Peter Schmalfeldt - Full-Stack & AI Engineer
+description: Peter Schmalfeldt's engineering experience, skills, certifications, and education, with a link to his PDF resume.
+card_image: /assets/images/card-og.jpg
+canonical: /resume.html
+isResume: true
+homePrefix: /
+---
+
+<div class="container resume-page">
+  <section class="resume-intro" aria-labelledby="resume-title">
+    <p class="section-label">Resume</p>
+    <h1 id="resume-title">{{ profile.name }}</h1>
+    <p class="resume-role">{{ profile.job_title }}</p>
+    <p>{{ profile.location }}</p>
+    {{#each profile.resume_summary}}
+    <p>{{ this }}</p>
+    {{/each}}
+    <div class="resume-actions">
+      <a class="button solid" href="{{ profile.links.pdf }}">Download Resume</a>
+    </div>
+    <div class="resume-actions">
+      <a href="mailto:{{ profile.email }}">Email me</a>
+      <a href="{{ profile.links.linkedin }}" rel="me">LinkedIn</a>
+      <a href="{{ profile.links.github }}" rel="me">GitHub</a>
+      <a href="/projects.html">Project catalog</a>
+    </div>
+    <p class="resume-review">Reviewed <time datetime="{{ profile.reviewed_on }}">{{ profile.reviewed_on }}</time>. Career details are summarized from my PDF resume.</p>
+  </section>
+
+  <nav class="resume-toc" aria-label="Resume sections">
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#qualifications">Qualifications</a>
+    <a href="#project-example">Project example</a>
+    <a href="#questions">Common questions</a>
+  </nav>
+
+  <section id="experience" class="page-section" aria-labelledby="experience-title">
+    <h2 id="experience-title">Experience</h2>
+    {{#each profile.experience}}
+    <article class="resume-entry">
+      <h3>{{ role }}</h3>
+      <p class="resume-employer">{{ employer }}</p>
+      <p>{{ dates }} | {{ arrangement }}</p>
+      <ul>
+        {{#each highlights}}
+        <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+    </article>
+    {{/each}}
+  </section>
+
+  <section id="skills" class="page-section" aria-labelledby="skills-title">
+    <h2 id="skills-title">Skills</h2>
+    <p>{{ profile.skills_note }} <a href="{{ profile.sources.skills }}">Read the PDF resume</a>.</p>
+    {{#each profile.skills}}
+    <div class="resume-skill-group">
+      <h3>{{ category }}</h3>
+      <ul class="resume-skills">
+        {{#each items}}
+        <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/each}}
+  </section>
+
+  <section id="qualifications" class="page-section" aria-labelledby="qualifications-title">
+    <h2 id="qualifications-title">Qualifications</h2>
+    <h3>Certifications</h3>
+    <ul>
+      {{#each profile.certifications}}
+      <li>{{ name }} - {{ issuer }}, {{ year }}</li>
+      {{/each}}
+    </ul>
+    <h3>Education</h3>
+    <p>{{ profile.education.degree }}<br>{{ profile.education.institution }}, {{ profile.education.location }} - {{ profile.education.year }}</p>
+    <p>{{ profile.education.details }}</p>
+  </section>
+
+  <section id="project-example" class="page-section" aria-labelledby="project-example-title">
+    <h2 id="project-example-title">{{ profile.project.title }}</h2>
+    <p>{{ profile.project.description }}</p>
+    <p>{{ profile.project.principle }}</p>
+    <p><a href="{{ profile.project.walkthrough }}">Watch the walkthrough</a> | <a href="{{ profile.project.repository }}">Source code and planning documents</a></p>
+    <p>{{ profile.project.limitations }}</p>
+  </section>
+
+  <section id="questions" class="page-section" aria-labelledby="questions-title">
+    <h2 id="questions-title">Common questions</h2>
+    {{#each profile.questions}}
+    <h3>{{ question }}</h3>
+    <p>{{ answer }}</p>
+    {{/each}}
+    <p><a href="{{ profile.links.booking }}" class="js-calendly-open" aria-haspopup="dialog" aria-controls="calendly-modal">View times and consulting options</a> | <a href="mailto:{{ profile.email }}">Email me</a></p>
+  </section>
+
+  <p class="resume-formats">Other formats: <a href="/profile.md">Markdown</a> | <a href="/profile.json">JSON</a></p>
+</div>

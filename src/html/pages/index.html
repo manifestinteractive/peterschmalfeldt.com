@@ -1,5 +1,6 @@
 ---
 layout: default
+modified: 2026-09-15
 title: AI Consulting & Custom Web Applications | Peter Schmalfeldt
 description: Peter Schmalfeldt provides AI and technical consulting and builds custom AI tools, web applications, automations, and integrations for individuals and teams.
 card_image: /assets/images/card-og.jpg
@@ -12,9 +13,9 @@ canonical: /
       <div class="col-sm-7 col-md-12 hero-copy">
         <p class="eyebrow">Senior Full-Stack &amp; AI Engineer</p>
         <h1 id="hero-title" class="heading">Custom AI Tools &amp; <span class="hero-title-line">Technical Consulting</span></h1>
-        <p class="hero-summary">I work with teams to build custom software and practical AI tools. I can help explore an early idea or contribute to a product that is already underway. We can structure the work around what your team needs.</p>
+        <p class="hero-summary">{{ profile.summary }}</p>
         <div class="hero-actions">
-          <a class="button solid js-calendly-open" href="https://calendly.com/peterschmalfeldt" aria-haspopup="dialog" aria-controls="calendly-modal" data-track data-category="Scheduling" data-action="Open" data-label="Book Time">Book Time</a>
+          <a class="button solid js-calendly-open" href="{{ profile.links.booking }}" aria-haspopup="dialog" aria-controls="calendly-modal" data-track data-category="Scheduling" data-action="Open" data-label="Book Time">Book Time</a>
           <a class="button email-me" href="#contact" data-track data-category="Nav" data-action="CTA" data-label="Talk About Your Project" title="Email Me">Email Me</a>
           <a class="hero-process-link" href="#prototype" data-track data-category="Nav" data-action="CTA" data-label="See How I Work">See How I Work</a>
         </div>
@@ -34,22 +35,12 @@ canonical: /
   </section>
 
   <section class="proof-bar" aria-label="Experience highlights">
+    {{#each profile.metrics}}
     <div class="proof-item">
-      <strong class="stat-number" data-count="25" data-suffix="+ years">25+ years</strong>
-      <span>Building for the web</span>
+      <strong class="stat-number" data-count="{{ count }}" data-prefix="{{ prefix }}" data-suffix="{{ suffix }}">{{ prefix }}{{ count }}{{ suffix }}</strong>
+      <span>{{ label }}</span>
     </div>
-    <div class="proof-item">
-      <strong class="stat-number" data-count="200" data-suffix="+">200+</strong>
-      <span>Custom web applications</span>
-    </div>
-    <div class="proof-item">
-      <strong class="stat-number" data-count="50" data-suffix="+">50+</strong>
-      <span>Clients, including Fortune 500 organizations</span>
-    </div>
-    <div class="proof-item">
-      <strong class="stat-number" data-count="15" data-prefix="Up to " data-suffix=" years">Up to 15 years</strong>
-      <span>Long-term client relationships</span>
-    </div>
+    {{/each}}
   </section>
 
   <section id="consulting" class="page-section consulting-section" aria-labelledby="consulting-title">
@@ -63,18 +54,16 @@ canonical: /
         </div>
 
         <div class="consulting-options">
+          {{#each profile.consulting}}
           <article class="consulting-option">
-            <h3>Paid consulting for individuals &amp; teams</h3>
-            <p>Focused time to work through a technical question or review an approach.</p>
+            <h3>{{ title }}</h3>
+            <p>{{ description }}</p>
           </article>
-          <article class="consulting-option">
-            <h3>Free fit conversation</h3>
-            <p>Considering a project or ongoing work? Book a free introductory call.</p>
-          </article>
+          {{/each}}
         </div>
 
-        <p class="consulting-availability">For ongoing contract work, my availability is generally evenings, weekends, and alternating Fridays.</p>
-        <a class="button solid js-calendly-open" href="https://calendly.com/peterschmalfeldt" aria-haspopup="dialog" aria-controls="calendly-modal" data-track data-category="Scheduling" data-action="Open" data-label="View Consulting Times">View Times and Options</a>
+        <p class="consulting-availability">{{ profile.availability }}</p>
+        <a class="button solid js-calendly-open" href="{{ profile.links.booking }}" aria-haspopup="dialog" aria-controls="calendly-modal" data-track data-category="Scheduling" data-action="Open" data-label="View Consulting Times">View Times and Options</a>
       </div>
     </div>
   </section>
@@ -169,21 +158,21 @@ canonical: /
   <section id="prototype" class="prototype-callout" aria-labelledby="prototype-title">
     <div class="row">
       <div class="col-sm-5 prototype-media">
-        <a href="https://vimeo.com/1180157927" target="_blank" rel="noopener" data-track data-category="Video" data-action="Open" data-label="Creating Rapid Prototypes" aria-label="Watch Creating Rapid Prototypes on Vimeo">
+        <a href="{{ profile.project.walkthrough }}" target="_blank" rel="noopener" data-track data-category="Video" data-action="Open" data-label="Creating Rapid Prototypes" aria-label="Watch Creating Rapid Prototypes on Vimeo">
           <img src="{{ package.assetPath }}images/rapid-prototype.webp" width="1083" height="609" loading="lazy" alt="Preview of Peter Schmalfeldt's Creating Rapid Prototypes walkthrough">
           <span class="play-icon" aria-hidden="true"></span>
         </a>
       </div>
       <div class="col-sm-7 prototype-copy">
         <p class="section-label">A working example</p>
-        <h2 id="prototype-title">How I approach rapid prototypes</h2>
-        <p>In this 15-minute walkthrough, I show the research and planning behind a working prototype. I also explain how I used AI tools during the build. I built the core demonstration in two days after the initial planning work.</p>
-        <p class="prototype-principle">The goal is to learn quickly without skipping the research &amp; planning.</p>
+        <h2 id="prototype-title">{{ profile.project.title }}</h2>
+        <p>{{ profile.project.description }}</p>
+        <p class="prototype-principle">{{ profile.project.principle }}</p>
         <div class="prototype-actions">
-          <a class="button solid" href="https://vimeo.com/1180157927" target="_blank" rel="noopener" data-track data-category="Video" data-action="Open" data-label="Watch the Walkthrough">Watch the Walkthrough</a>
-          <a class="prototype-source" href="https://github.com/manifestinteractive/hhpc2" target="_blank" rel="noopener" data-track data-category="Project" data-action="Open" data-label="Rapid Prototype Source">Source Code &amp; Planning Docs</a>
+          <a class="button solid" href="{{ profile.project.walkthrough }}" target="_blank" rel="noopener" data-track data-category="Video" data-action="Open" data-label="Watch the Walkthrough">Watch the Walkthrough</a>
+          <a class="prototype-source" href="{{ profile.project.repository }}" target="_blank" rel="noopener" data-track data-category="Project" data-action="Open" data-label="Rapid Prototype Source">Source Code &amp; Planning Docs</a>
         </div>
-        <p class="context-note">An independent conceptual demonstration inspired by the Artemis II launch. It uses simulated data, is not affiliated with NASA, and is not clinically validated.</p>
+        <p class="context-note">{{ profile.project.limitations }}</p>
       </div>
     </div>
   </section>
@@ -193,6 +182,6 @@ canonical: /
   <section id="contact" class="final-cta" aria-labelledby="contact-title">
     <h2 id="contact-title">Want to talk through an idea?</h2>
     <p>Send me a note about what you are working on, where things stand, and where another experienced person could help.</p>
-    <a class="button solid email-me" href="mailto:&#109;&#101;&#064;&#112;&#101;&#116;&#101;&#114;&#115;&#099;&#104;&#109;&#097;&#108;&#102;&#101;&#108;&#100;&#116;&#046;&#099;&#111;&#109;" data-track data-category="Nav" data-action="CTA" data-label="Start a Conversation" title="Email Peter Schmalfeldt">Start a Conversation</a>
+    <a class="button solid email-me" href="mailto:{{ profile.email }}" data-track data-category="Nav" data-action="CTA" data-label="Start a Conversation" title="Email Peter Schmalfeldt">Start a Conversation</a>
   </section>
 </div>

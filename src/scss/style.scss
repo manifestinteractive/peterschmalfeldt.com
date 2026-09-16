@@ -469,14 +469,14 @@ body.calendly-modal-open {
               border-bottom: 2px inset transparent;
               font-weight: 400;
 
-              &.resume {
-                font-weight: 900;
-              }
-
               &.active {
                 color: var(--color-black);
                 font-weight: 600;
                 border-bottom: 2px inset rgba(0, 0, 0, 0.25);
+              }
+
+              &.resume {
+                font-weight: 900;
               }
 
               &:hover, &:focus {
@@ -1984,3 +1984,118 @@ h2.title + div.cta > p, h2.title > div > p > a {
 .text-left { text-align: left !important; }
 .text-right { text-align: right !important; }
 .text-center { text-align: center !important; }
+
+// Resume uses the existing site colors and type scale in both themes.
+.resume-page {
+  padding-top: 115px;
+  padding-bottom: 40px;
+
+  p, .resume-entry, #qualifications > ul, #questions > h3 {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .resume-role, .resume-employer {
+    font-weight: 600;
+  }
+
+  .page-section {
+    padding: 45px 0;
+  }
+
+  .resume-intro {
+    padding-bottom: 25px;
+  }
+
+  .resume-actions, .resume-toc {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 24px;
+    margin: 24px 0;
+  }
+
+  .resume-toc a {
+    padding: 8px 0;
+  }
+
+  .resume-review, .resume-formats {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .resume-entry + .resume-entry, .resume-skill-group + .resume-skill-group {
+    margin-top: 35px;
+  }
+
+  ul {
+    padding-left: 22px;
+    margin-bottom: 24px;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .resume-skills {
+    columns: 2;
+    column-gap: 40px;
+
+    li {
+      break-inside: avoid;
+    }
+  }
+}
+
+.projects-page {
+  .resume-entry h3 {
+    color: var(--accent-blue);
+    font-size: 28px;
+
+    a {
+      color: inherit;
+
+      &:hover, &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .project-stack {
+    margin-bottom: 24px;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .resume-page {
+    padding-top: 35px;
+
+    .resume-skills {
+      columns: 1;
+    }
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .projects-page .resume-entry h3 {
+    color: var(--accent-green);
+  }
+
+  .resume-page li {
+    color: var(--color-white);
+  }
+}

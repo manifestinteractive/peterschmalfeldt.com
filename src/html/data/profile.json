@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-15",
+  "modified_on": "2026-09-15",
+  "name": "Peter Schmalfeldt",
+  "given_name": "Peter",
+  "family_name": "Schmalfeldt",
+  "job_title": "Senior Full-Stack & AI Engineer and Solutions Architect",
+  "location": "Gig Harbor, WA",
+  "email": "me@peterschmalfeldt.com",
+  "summary": "I work with teams to build custom software and practical AI tools. I can help explore an early idea or contribute to a product that is already underway. We can structure the work around what your team needs.",
+  "resume_summary": [
+    "I am a Senior Full-Stack Engineer, Senior AI Engineer, and Solutions Architect with 25+ years of experience. I help turn business ideas into custom web applications, from discovery and product design through delivery and ongoing improvement.",
+    "My work combines software engineering with applied AI, including agents, RAG applications, conversational interfaces, and workflow automation. I also work on ecommerce platforms and integrations, with experience in Shopify and Salesforce Commerce Cloud."
+  ],
+  "links": {
+    "website": "https://peterschmalfeldt.com/",
+    "resume": "https://peterschmalfeldt.com/resume.html",
+    "pdf": "https://resume.peterschmalfeldt.com/",
+    "linkedin": "https://www.linkedin.com/in/peter-schmalfeldt/",
+    "github": "https://github.com/manifestinteractive",
+    "booking": "https://calendly.com/peterschmalfeldt"
+  },
+  "sources": {
+    "skills": "https://resume.peterschmalfeldt.com/",
+    "career": "https://resume.peterschmalfeldt.com/",
+    "services": "https://peterschmalfeldt.com/#services",
+    "project": "https://peterschmalfeldt.com/#prototype"
+  },
+  "skills_note": "Skills are reproduced from my PDF resume, which is the source of truth for my skills.",
+  "metrics": [
+    {
+      "count": 25,
+      "prefix": "",
+      "suffix": "+ years",
+      "label": "Building for the web"
+    },
+    {
+      "count": 200,
+      "prefix": "",
+      "suffix": "+",
+      "label": "Custom web applications"
+    },
+    {
+      "count": 50,
+      "prefix": "",
+      "suffix": "+",
+      "label": "Clients, including Fortune 500 organizations"
+    },
+    {
+      "count": 15,
+      "prefix": "Up to ",
+      "suffix": " years",
+      "label": "Long-term client relationships"
+    }
+  ],
+  "availability": "For ongoing contract work, my availability is generally evenings, weekends, and alternating Fridays.",
+  "consulting": [
+    {
+      "title": "Paid consulting for individuals & teams",
+      "description": "Focused time to work through a technical question or review an approach."
+    },
+    {
+      "title": "Free fit conversation",
+      "description": "Considering a project or ongoing work? Book a free introductory call."
+    }
+  ],
+  "experience": [
+    {
+      "employer": "Manifest Interactive",
+      "role": "Founder & Principal Consultant, Full-Stack and AI Engineering",
+      "start": "2000-01",
+      "end": null,
+      "dates": "January 2000 - Present",
+      "arrangement": "Part-time independent consulting",
+      "highlights": [
+        "I work with founders and business stakeholders on discovery, requirements, product plans, and technical direction.",
+        "I provide product design and engineering from wireframes and prototypes through development, testing, launch, and ongoing improvement.",
+        "I have delivered 200+ custom web applications for more than 50 clients, with relationships extending as long as 15 years.",
+        "I work as a sole design and engineering resource or lead delivery with client teams. I also create reusable AI tooling and documented development workflows."
+      ]
+    },
+    {
+      "employer": "Patagonia",
+      "role": "Senior AI Engineer",
+      "start": "2026-07",
+      "end": null,
+      "dates": "July 2026 - Present",
+      "arrangement": "Remote",
+      "highlights": [
+        "I serve as the first engineer on the Artificial Intelligence team, taking cross-functional AI solutions from discovery through production.",
+        "I build knowledge, planning, recommendation, and workflow applications with generative AI, agentic systems, and RAG.",
+        "I developed an internal Microsoft Teams HR knowledge assistant and support AI adoption through coaching, documentation, and reusable tools.",
+        "I work with senior leadership and cross-functional teams on technical direction, solution reviews, and responsible AI."
+      ]
+    },
+    {
+      "employer": "Patagonia",
+      "role": "Senior Digital Engineer",
+      "start": "2022-08",
+      "end": "2026-07",
+      "dates": "August 2022 - July 2026",
+      "arrangement": "Remote",
+      "highlights": [
+        "I built and supported enterprise ecommerce systems with Salesforce Commerce Cloud, including integrations and production troubleshooting.",
+        "I contributed to solution design, code reviews, mentoring, and delivery with QA, Product, and Marketing.",
+        "I developed accessibility guidance, automated engineering tools, and documentation for the Digital Engineering team."
+      ]
+    },
+    {
+      "employer": "Red Van Workshop",
+      "role": "Tier 5 - Senior SFCC Full-Stack Developer (Certified)",
+      "start": "2017-12",
+      "end": "2022-08",
+      "dates": "December 2017 - August 2022",
+      "arrangement": "Remote",
+      "highlights": [
+        "I delivered enterprise ecommerce applications as a Tier 5 developer, Red Van Workshop's highest engineering level.",
+        "I helped implement store pickup, curbside pickup, and same-day delivery for a major retailer within 30 days during COVID-19.",
+        "I implemented integrations across payments, inventory, fulfillment, tax, search, customer data, and related systems.",
+        "I mentored developers and client teams and created technical documentation, accessibility guidance, and testing tools."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Full-Stack Engineering",
+      "items": [
+        "Custom Web Application Development",
+        "Product Design",
+        "UX/UI Design",
+        "Responsive Design",
+        "Front-End Development",
+        "Back-End Development",
+        "API Design and Integration",
+        "Database Design and Administration",
+        "System Integration",
+        "RBAC",
+        "RLS",
+        "Performance Optimization",
+        "Accessibility",
+        "Testing",
+        "CI/CD",
+        "Cloud Deployment"
+      ]
+    },
+    {
+      "category": "AI Engineering",
+      "items": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Generative AI",
+        "Large Language Models (LLMs)",
+        "Agentic AI",
+        "AI Application Development",
+        "AI-Assisted Software Development",
+        "RAG",
+        "Vector Databases",
+        "Conversational AI",
+        "Chatbots",
+        "Prompt Engineering",
+        "Workflow Automation",
+        "AI Enablement",
+        "Responsible AI"
+      ]
+    },
+    {
+      "category": "Languages & Frameworks",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "PHP",
+        "SQL",
+        "Bash",
+        "HTML",
+        "CSS",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Vue.js",
+        "Laravel",
+        "Lit",
+        "Storybook",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Bootstrap"
+      ]
+    },
+    {
+      "category": "Developer Tooling",
+      "items": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Bash",
+        "CLI/Terminal",
+        "CI/CD",
+        "Azure DevOps",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot",
+        "Ollama",
+        "MCP",
+        "AI Coding Agents",
+        "Custom Agents & Skills"
+      ]
+    },
+    {
+      "category": "Data, Cloud & AI Platforms",
+      "items": [
+        "PostgreSQL (Postgres)",
+        "Supabase",
+        "MySQL",
+        "Redis",
+        "Elasticsearch",
+        "AWS",
+        "Microsoft Azure",
+        "Microsoft Foundry (formerly Azure AI Foundry)",
+        "Azure OpenAI",
+        "Vercel",
+        "Docker",
+        "Azure DevOps",
+        "GitHub",
+        "OpenAI",
+        "Claude",
+        "Codex",
+        "GitHub Copilot",
+        "Microsoft Copilot Studio",
+        "Microsoft 365 Copilot",
+        "Microsoft Teams Agents"
+      ]
+    },
+    {
+      "category": "Ecommerce",
+      "items": [
+        "Ecommerce Architecture and Development",
+        "Shopify",
+        "Salesforce Commerce Cloud (SFCC)",
+        "Salesforce B2C Commerce",
+        "Salesforce Reference Architecture (SFRA)",
+        "Custom Ecommerce Platforms",
+        "Payments",
+        "Tax",
+        "Order Management",
+        "Inventory",
+        "Fulfillment",
+        "Search",
+        "Third-Party Integrations"
+      ]
+    },
+    {
+      "category": "Architecture & Leadership",
+      "items": [
+        "Solutions Architecture",
+        "Software Architecture",
+        "Technical Discovery",
+        "Requirements Analysis",
+        "Rapid Prototyping",
+        "Stakeholder Management",
+        "Cross-Functional Leadership",
+        "Technical Leadership",
+        "Mentoring",
+        "Development Standards",
+        "Documentation",
+        "Human-Centered Design"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Salesforce Certified AI Associate",
+      "issuer": "Salesforce",
+      "year": 2024
+    },
+    {
+      "name": "Salesforce Certified B2C Commerce Developer",
+      "issuer": "Salesforce",
+      "year": 2022
+    }
+  ],
+  "education": {
+    "institution": "Webster University",
+    "location": "St. Louis, MO",
+    "degree": "Bachelor of Interactive Media",
+    "year": 2004,
+    "details": "Minor in Audio Engineering; Certificate in Web Design; GPA 3.85"
+  },
+  "project": {
+    "title": "How I approach rapid prototypes",
+    "description": "In this 15-minute walkthrough, I show the research and planning behind a working prototype. I also explain how I used AI tools during the build. I built the core demonstration in two days after the initial planning work.",
+    "principle": "The goal is to learn quickly without skipping the research & planning.",
+    "limitations": "An independent conceptual demonstration inspired by the Artemis II launch. It uses simulated data, is not affiliated with NASA, and is not clinically validated.",
+    "walkthrough": "https://vimeo.com/1180157927",
+    "repository": "https://github.com/manifestinteractive/hhpc2"
+  },
+  "questions": [
+    {
+      "question": "What kind of AI work do I do?",
+      "answer": "I build AI applications, agents, RAG systems, conversational interfaces, and workflow automation. I also help teams adopt AI through coaching and documented development workflows."
+    },
+    {
+      "question": "Can I join a team that already has a project underway?",
+      "answer": "Yes. I can contribute as a hands-on AI engineer, solutions architect, or senior full-stack developer within the team's process."
+    },
+    {
+      "question": "When am I available for independent consulting?",
+      "answer": "For ongoing contract work, my availability is generally evenings, weekends, and alternating Fridays. My consulting work is part-time, alongside my role at Patagonia."
+    },
+    {
+      "question": "How can we discuss a project?",
+      "answer": "I offer paid consulting and a free introductory fit conversation. Use my scheduling link for current options, or send me an email."
+    }
+  ]
+}

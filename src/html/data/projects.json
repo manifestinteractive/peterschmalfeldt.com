@@ -1,0 +1,4378 @@
+{
+  "reviewed_on": "2026-09-15",
+  "source": "https://peterschmalfeldt.com/projects.html",
+  "coverage": "Selected public projects from manifestinteractive, FindByColor, PoliceScorecard, sfccdevops, and opensfcc. Summaries are based on repository READMEs. Last contribution is the author date of the latest public commit returned by GitHub for manifestinteractive on the default branch, not all activity across branches or pull requests. Archived projects follow other projects; each group is sorted newest first. This is not a complete contribution history. Public commits do not establish sole authorship. Technology coverage includes the complete GitHub language inventory and selected frameworks, platforms, and tools from dependency manifests, container files, and READMEs. A declared dependency is not proof of production use or a specific AI model. Resume skill matches use the existing resume terminology and do not change the resume. Absence from this selected catalog does not establish lack of experience.",
+  "projects": [
+    {
+      "id": "manifestinteractive/live-session-lab",
+      "name": "live-session-lab",
+      "organization": "manifestinteractive",
+      "summary": "A browser video-call experiment that connects two people through private invite codes. Built with Next.js and LiveKit, it supports camera previews and device selection without user accounts.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "LiveKit",
+        "Next.js",
+        "React",
+        "shadcn/ui",
+        "Tailwind CSS",
+        "WebRTC",
+        "Node.js",
+        "Axe",
+        "MCP",
+        "Playwright",
+        "Vitest",
+        "Vercel"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/live-session-lab"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/live-session-lab/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/live-session-lab/commit/19307a5099122807ffab9d8b34290b223b16651b"
+        }
+      ],
+      "last_contribution": "2026-09-11",
+      "last_contribution_url": "https://github.com/manifestinteractive/live-session-lab/commit/19307a5099122807ffab9d8b34290b223b16651b",
+      "readme_url": "https://github.com/manifestinteractive/live-session-lab/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/live-session-lab",
+      "github_languages": [
+        "TypeScript",
+        "JavaScript",
+        "CSS"
+      ],
+      "project_types": [
+        "Web application",
+        "Video calling"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "TypeScript",
+            "JavaScript",
+            "CSS"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "LiveKit",
+            "Next.js",
+            "React",
+            "shadcn/ui",
+            "Tailwind CSS",
+            "WebRTC"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Axe",
+            "MCP",
+            "Playwright",
+            "Vitest",
+            "Vercel"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "TypeScript",
+          "source": "https://api.github.com/repos/manifestinteractive/live-session-lab/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/live-session-lab/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/live-session-lab/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "LiveKit",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared dependencies package: @livekit/components-react"
+        },
+        {
+          "technology": "Next.js",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared dependencies package: next"
+        },
+        {
+          "technology": "React",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared dependencies package: react"
+        },
+        {
+          "technology": "Axe",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared devDependencies package: @axe-core/playwright"
+        },
+        {
+          "technology": "MCP",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared devDependencies package: @modelcontextprotocol/sdk"
+        },
+        {
+          "technology": "Playwright",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared devDependencies package: @playwright/test"
+        },
+        {
+          "technology": "shadcn/ui",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared devDependencies package: shadcn"
+        },
+        {
+          "technology": "Tailwind CSS",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared devDependencies package: tailwindcss"
+        },
+        {
+          "technology": "Vitest",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/package.json",
+          "basis": "Declared devDependencies package: vitest"
+        },
+        {
+          "technology": "WebRTC",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Vercel",
+          "source": "https://github.com/manifestinteractive/live-session-lab/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "Next.js",
+        "React",
+        "shadcn/ui",
+        "Tailwind CSS",
+        "Node.js",
+        "MCP",
+        "Vercel"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "policescorecard/api",
+      "name": "api",
+      "organization": "PoliceScorecard",
+      "summary": "The Police Scorecard API, with documentation for server configuration, endpoint testing, and deployment. Its development setup includes MySQL and Elasticsearch.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "API Blueprint",
+        "HTML",
+        "Shell",
+        "Express",
+        "Elasticsearch",
+        "MySQL",
+        "Sequelize",
+        "Docker",
+        "Node.js",
+        "Mocha",
+        "Docker Compose"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/PoliceScorecard/api"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/PoliceScorecard/api/blob/develop/package.json"
+        },
+        {
+          "label": "Published project role",
+          "url": "https://www.linkedin.com/in/peter-schmalfeldt/"
+        },
+        {
+          "label": "Police Scorecard Data Team",
+          "url": "https://policescorecard.org/about"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/PoliceScorecard/api/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/PoliceScorecard/api/commit/9d3f5aa538c4b19676140312b63adfb4bba8b52a"
+        },
+        {
+          "label": "Dockerfile",
+          "url": "https://github.com/PoliceScorecard/api/blob/develop/Dockerfile"
+        },
+        {
+          "label": "docker-compose.yml",
+          "url": "https://github.com/PoliceScorecard/api/blob/develop/docker-compose.yml"
+        }
+      ],
+      "last_contribution": "2026-07-26",
+      "last_contribution_url": "https://github.com/PoliceScorecard/api/commit/9d3f5aa538c4b19676140312b63adfb4bba8b52a",
+      "readme_url": "https://github.com/PoliceScorecard/api/blob/develop/README.md",
+      "repository_url": "https://github.com/PoliceScorecard/api",
+      "contribution": "I contributed to the Police Scorecard API as manifestinteractive. My published role was full-stack web developer, January 2019 to April 2025.",
+      "github_languages": [
+        "JavaScript",
+        "CSS",
+        "API Blueprint",
+        "HTML",
+        "Shell",
+        "Dockerfile"
+      ],
+      "project_types": [
+        "API"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "CSS",
+            "API Blueprint",
+            "HTML",
+            "Shell"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Express"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Elasticsearch",
+            "MySQL",
+            "Sequelize"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker",
+            "Node.js",
+            "Mocha",
+            "Docker Compose"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/PoliceScorecard/api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/PoliceScorecard/api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "API Blueprint",
+          "source": "https://api.github.com/repos/PoliceScorecard/api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/PoliceScorecard/api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/PoliceScorecard/api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/PoliceScorecard/api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Elasticsearch",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/package.json",
+          "basis": "Declared dependencies package: elasticsearch"
+        },
+        {
+          "technology": "Express",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/package.json",
+          "basis": "Declared dependencies package: express"
+        },
+        {
+          "technology": "MySQL",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/package.json",
+          "basis": "Declared dependencies package: mysql2"
+        },
+        {
+          "technology": "Sequelize",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/package.json",
+          "basis": "Declared dependencies package: sequelize"
+        },
+        {
+          "technology": "Mocha",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/package.json",
+          "basis": "Declared devDependencies package: mocha"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/Dockerfile",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/docker-compose.yml",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker Compose",
+          "source": "https://github.com/PoliceScorecard/api/blob/develop/docker-compose.yml",
+          "basis": "Container configuration"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Elasticsearch",
+        "MySQL",
+        "Docker",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/PoliceScorecard"
+    },
+    {
+      "id": "policescorecard/website",
+      "name": "website",
+      "organization": "PoliceScorecard",
+      "summary": "The Police Scorecard website, with a Docker development setup and Laravel documentation. The repository includes testing and deployment workflows.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Blade",
+        "PHP",
+        "Shell",
+        "Sass",
+        "Laravel",
+        "Livewire",
+        "Docker",
+        "Node.js",
+        "Laravel Mix",
+        "Docker Compose"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/PoliceScorecard/website"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/PoliceScorecard/website/blob/develop/package.json"
+        },
+        {
+          "label": "Published project role",
+          "url": "https://www.linkedin.com/in/peter-schmalfeldt/"
+        },
+        {
+          "label": "Police Scorecard Data Team",
+          "url": "https://policescorecard.org/about"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/PoliceScorecard/website/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/PoliceScorecard/website/commit/e9a5a7a102e3e012fe8c0fe82e7c17dc8adee831"
+        },
+        {
+          "label": "composer.json",
+          "url": "https://github.com/PoliceScorecard/website/blob/develop/composer.json"
+        },
+        {
+          "label": "Dockerfile",
+          "url": "https://github.com/PoliceScorecard/website/blob/develop/Dockerfile"
+        },
+        {
+          "label": "docker-compose.yml",
+          "url": "https://github.com/PoliceScorecard/website/blob/develop/docker-compose.yml"
+        }
+      ],
+      "last_contribution": "2026-07-26",
+      "last_contribution_url": "https://github.com/PoliceScorecard/website/commit/e9a5a7a102e3e012fe8c0fe82e7c17dc8adee831",
+      "readme_url": "https://github.com/PoliceScorecard/website/blob/develop/README.md",
+      "repository_url": "https://github.com/PoliceScorecard/website",
+      "contribution": "I contributed to the Police Scorecard website as manifestinteractive. My published role was full-stack web developer, January 2019 to April 2025.",
+      "github_languages": [
+        "Blade",
+        "PHP",
+        "Dockerfile",
+        "Shell"
+      ],
+      "project_types": [
+        "Web application"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Blade",
+            "PHP",
+            "Shell"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Sass",
+            "Laravel",
+            "Livewire"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker",
+            "Node.js",
+            "Laravel Mix",
+            "Docker Compose"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Blade",
+          "source": "https://api.github.com/repos/PoliceScorecard/website/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "PHP",
+          "source": "https://api.github.com/repos/PoliceScorecard/website/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/PoliceScorecard/website/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/PoliceScorecard/website/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Laravel Mix",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/package.json",
+          "basis": "Declared devDependencies package: laravel-mix"
+        },
+        {
+          "technology": "Sass",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/package.json",
+          "basis": "Declared devDependencies package: sass"
+        },
+        {
+          "technology": "Laravel",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/composer.json",
+          "basis": "Declared require package: laravel/framework"
+        },
+        {
+          "technology": "Livewire",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/composer.json",
+          "basis": "Declared require package: livewire/livewire"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/Dockerfile",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/docker-compose.yml",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker Compose",
+          "source": "https://github.com/PoliceScorecard/website/blob/develop/docker-compose.yml",
+          "basis": "Container configuration"
+        }
+      ],
+      "resume_skills": [
+        "PHP",
+        "Laravel",
+        "Docker",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/PoliceScorecard"
+    },
+    {
+      "id": "manifestinteractive/hhpc2",
+      "name": "hhpc2",
+      "organization": "manifestinteractive",
+      "summary": "A crew-readiness dashboard prototype built through a planned, AI-assisted development process. It turns simulated sensor data into trends and readiness scores. This independent demonstration is not a NASA system or a clinically validated tool.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "TypeScript",
+        "PLpgSQL",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Next.js",
+        "React",
+        "Recharts",
+        "shadcn/ui",
+        "Tailwind CSS",
+        "Supabase",
+        "OpenAI",
+        "Node.js",
+        "Vitest"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/hhpc2"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/hhpc2/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/hhpc2/commit/5241f6ecc9f10c9370c2a54ffe7679b545cf480c"
+        }
+      ],
+      "last_contribution": "2026-04-04",
+      "last_contribution_url": "https://github.com/manifestinteractive/hhpc2/commit/5241f6ecc9f10c9370c2a54ffe7679b545cf480c",
+      "readme_url": "https://github.com/manifestinteractive/hhpc2/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/hhpc2",
+      "github_languages": [
+        "TypeScript",
+        "PLpgSQL",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "project_types": [
+        "Web application",
+        "Dashboard",
+        "AI prototype"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "TypeScript",
+            "PLpgSQL",
+            "CSS",
+            "JavaScript",
+            "Python"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Next.js",
+            "React",
+            "Recharts",
+            "shadcn/ui",
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Supabase",
+            "OpenAI"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Vitest"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "TypeScript",
+          "source": "https://api.github.com/repos/manifestinteractive/hhpc2/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "PLpgSQL",
+          "source": "https://api.github.com/repos/manifestinteractive/hhpc2/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/hhpc2/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/hhpc2/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Python",
+          "source": "https://api.github.com/repos/manifestinteractive/hhpc2/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Supabase",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared dependencies package: @supabase/supabase-js"
+        },
+        {
+          "technology": "Next.js",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared dependencies package: next"
+        },
+        {
+          "technology": "OpenAI",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared dependencies package: openai"
+        },
+        {
+          "technology": "React",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared dependencies package: react"
+        },
+        {
+          "technology": "Recharts",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared dependencies package: recharts"
+        },
+        {
+          "technology": "shadcn/ui",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared dependencies package: shadcn"
+        },
+        {
+          "technology": "Tailwind CSS",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared devDependencies package: tailwindcss"
+        },
+        {
+          "technology": "Vitest",
+          "source": "https://github.com/manifestinteractive/hhpc2/blob/main/package.json",
+          "basis": "Declared devDependencies package: vitest"
+        }
+      ],
+      "resume_skills": [
+        "TypeScript",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Next.js",
+        "React",
+        "shadcn/ui",
+        "Tailwind CSS",
+        "Supabase",
+        "OpenAI",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/local-ai",
+      "name": "local-ai",
+      "organization": "manifestinteractive",
+      "summary": "Setup scripts for running AI on a home network, with installation support for macOS and Ubuntu.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Shell"
+      ],
+      "license": "Not verified",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/local-ai"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/local-ai/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/local-ai/commit/8d08d8f7482f33001d26182370febdf515eee0da"
+        }
+      ],
+      "last_contribution": "2025-06-28",
+      "last_contribution_url": "https://github.com/manifestinteractive/local-ai/commit/8d08d8f7482f33001d26182370febdf515eee0da",
+      "readme_url": "https://github.com/manifestinteractive/local-ai/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/local-ai",
+      "github_languages": [
+        "Shell"
+      ],
+      "project_types": [
+        "Setup scripts",
+        "Local AI"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Shell"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/manifestinteractive/local-ai/languages",
+          "basis": "GitHub language inventory"
+        }
+      ],
+      "resume_skills": [],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/ai-chatbot",
+      "name": "ai-chatbot",
+      "organization": "manifestinteractive",
+      "summary": "A local AI chatbot built with Ollama for conversations using your own domain knowledge. Its 3D background responds to sentiment in the conversation.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "SCSS",
+        "HTML",
+        "React Three Fiber",
+        "React",
+        "Three.js",
+        "Sass",
+        "Hugging Face Inference",
+        "Ollama",
+        "Node.js"
+      ],
+      "license": "Not verified",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/ai-chatbot"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/ai-chatbot/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/ai-chatbot/commit/3430e4e404e92a13f17789086f14748d80addb9a"
+        }
+      ],
+      "last_contribution": "2025-06-01",
+      "last_contribution_url": "https://github.com/manifestinteractive/ai-chatbot/commit/3430e4e404e92a13f17789086f14748d80addb9a",
+      "readme_url": "https://github.com/manifestinteractive/ai-chatbot/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/ai-chatbot",
+      "github_languages": [
+        "JavaScript",
+        "SCSS",
+        "HTML"
+      ],
+      "project_types": [
+        "Web application",
+        "AI chatbot"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "SCSS",
+            "HTML"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "React Three Fiber",
+            "React",
+            "Three.js",
+            "Sass"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Hugging Face Inference",
+            "Ollama"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/ai-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "SCSS",
+          "source": "https://api.github.com/repos/manifestinteractive/ai-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/manifestinteractive/ai-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Hugging Face Inference",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: @huggingface/inference"
+        },
+        {
+          "technology": "React Three Fiber",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: @react-three/fiber"
+        },
+        {
+          "technology": "React",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: react"
+        },
+        {
+          "technology": "Three.js",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: three"
+        },
+        {
+          "technology": "Sass",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/package.json",
+          "basis": "Declared devDependencies package: sass"
+        },
+        {
+          "technology": "Ollama",
+          "source": "https://github.com/manifestinteractive/ai-chatbot/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "React",
+        "Ollama",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/cursor-ide-setup",
+      "name": "cursor-ide-setup",
+      "organization": "manifestinteractive",
+      "summary": "A setup guide for AI-assisted development in Cursor. It covers model selection, project specifications, and rules for coding agents, with MCP configuration guidance.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Cursor",
+        "MCP"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/cursor-ide-setup"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/cursor-ide-setup/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/cursor-ide-setup/commit/c7290520626fffee5dcbd90c92ed803c65574c4b"
+        }
+      ],
+      "last_contribution": "2025-05-11",
+      "last_contribution_url": "https://github.com/manifestinteractive/cursor-ide-setup/commit/c7290520626fffee5dcbd90c92ed803c65574c4b",
+      "readme_url": "https://github.com/manifestinteractive/cursor-ide-setup/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/cursor-ide-setup",
+      "github_languages": [],
+      "project_types": [
+        "Developer guide"
+      ],
+      "technology_groups": [
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Cursor",
+            "MCP"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Cursor",
+          "source": "https://github.com/manifestinteractive/cursor-ide-setup/blob/main/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "MCP",
+          "source": "https://github.com/manifestinteractive/cursor-ide-setup/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "MCP"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/tts_server",
+      "name": "tts_server",
+      "organization": "manifestinteractive",
+      "summary": "A customized AllTalk V2 setup for running an XTTS V2 text-to-speech model on Ubuntu. It includes asset downloads and service scripts for operating the server.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Python",
+        "HTML",
+        "JavaScript",
+        "Shell",
+        "CSS",
+        "AllTalk V2",
+        "XTTS V2"
+      ],
+      "license": "AGPL-3.0",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/tts_server"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/tts_server/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/tts_server/commit/008013409fbdf98f0ec9305ee87498bb08a7712a"
+        }
+      ],
+      "last_contribution": "2025-01-05",
+      "last_contribution_url": "https://github.com/manifestinteractive/tts_server/commit/008013409fbdf98f0ec9305ee87498bb08a7712a",
+      "readme_url": "https://github.com/manifestinteractive/tts_server/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/tts_server",
+      "github_languages": [
+        "Python",
+        "HTML",
+        "JavaScript",
+        "Shell",
+        "CSS"
+      ],
+      "project_types": [
+        "Text-to-speech server"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Python",
+            "HTML",
+            "JavaScript",
+            "Shell",
+            "CSS"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "AllTalk V2",
+            "XTTS V2"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Python",
+          "source": "https://api.github.com/repos/manifestinteractive/tts_server/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/manifestinteractive/tts_server/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/tts_server/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/manifestinteractive/tts_server/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/tts_server/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "AllTalk V2",
+          "source": "https://github.com/manifestinteractive/tts_server/blob/main/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "XTTS V2",
+          "source": "https://github.com/manifestinteractive/tts_server/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "Python",
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/vrm-chatbot",
+      "name": "vrm-chatbot",
+      "organization": "manifestinteractive",
+      "summary": "A personalized version of the Amica avatar chatbot, using LM Studio with XTTS V2 and RVC voices.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "Shell",
+        "Rust",
+        "HTML",
+        "CSS",
+        "Headless UI",
+        "Next.js",
+        "React",
+        "Three.js",
+        "Tauri",
+        "Tailwind CSS",
+        "Supabase",
+        "Transformers.js",
+        "LM Studio",
+        "XTTS V2",
+        "RVC",
+        "Node.js",
+        "Jest",
+        "Webpack"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/vrm-chatbot"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/vrm-chatbot/commit/078e4012da42adc942b5f492b0e598a0fa5fc06f"
+        }
+      ],
+      "last_contribution": "2025-01-05",
+      "last_contribution_url": "https://github.com/manifestinteractive/vrm-chatbot/commit/078e4012da42adc942b5f492b0e598a0fa5fc06f",
+      "readme_url": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/vrm-chatbot",
+      "github_languages": [
+        "TypeScript",
+        "JavaScript",
+        "Shell",
+        "Rust",
+        "HTML",
+        "CSS"
+      ],
+      "project_types": [
+        "Web application",
+        "AI chatbot"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "TypeScript",
+            "JavaScript",
+            "Shell",
+            "Rust",
+            "HTML",
+            "CSS"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Headless UI",
+            "Next.js",
+            "React",
+            "Three.js",
+            "Tauri",
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Supabase",
+            "Transformers.js",
+            "LM Studio",
+            "XTTS V2",
+            "RVC"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Jest",
+            "Webpack"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "TypeScript",
+          "source": "https://api.github.com/repos/manifestinteractive/vrm-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/vrm-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/manifestinteractive/vrm-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Rust",
+          "source": "https://api.github.com/repos/manifestinteractive/vrm-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/manifestinteractive/vrm-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/vrm-chatbot/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Headless UI",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: @headlessui/react"
+        },
+        {
+          "technology": "Supabase",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: @supabase/supabase-js"
+        },
+        {
+          "technology": "Transformers.js",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: @xenova/transformers"
+        },
+        {
+          "technology": "Next.js",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: next"
+        },
+        {
+          "technology": "React",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: react"
+        },
+        {
+          "technology": "Three.js",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared dependencies package: three"
+        },
+        {
+          "technology": "Tauri",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared devDependencies package: @tauri-apps/cli"
+        },
+        {
+          "technology": "Jest",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared devDependencies package: jest"
+        },
+        {
+          "technology": "Tailwind CSS",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared devDependencies package: tailwindcss"
+        },
+        {
+          "technology": "Webpack",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/package.json",
+          "basis": "Declared devDependencies package: webpack"
+        },
+        {
+          "technology": "LM Studio",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "XTTS V2",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "RVC",
+          "source": "https://github.com/manifestinteractive/vrm-chatbot/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Supabase",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/vrm-model",
+      "name": "vrm-model",
+      "organization": "manifestinteractive",
+      "summary": "My personal VRM avatar model, with reference images and shader color settings.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "VRM"
+      ],
+      "license": "Not verified",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/vrm-model"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/vrm-model/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/vrm-model/commit/c9668f1459f63869cd317e9a254566b04f5286d6"
+        }
+      ],
+      "last_contribution": "2024-12-30",
+      "last_contribution_url": "https://github.com/manifestinteractive/vrm-model/commit/c9668f1459f63869cd317e9a254566b04f5286d6",
+      "readme_url": "https://github.com/manifestinteractive/vrm-model/blob/main/README.md",
+      "repository_url": "https://github.com/manifestinteractive/vrm-model",
+      "github_languages": [],
+      "project_types": [
+        "3D asset"
+      ],
+      "technology_groups": [
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "VRM"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "VRM",
+          "source": "https://github.com/manifestinteractive/vrm-model/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "opensfcc/sandbox-launchd",
+      "name": "sandbox-launchd",
+      "organization": "opensfcc",
+      "summary": "macOS launch agents that start and stop a Salesforce Commerce Cloud sandbox with the computer's power and sleep events. An optional Alfred workflow provides manual controls.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Shell",
+        "Salesforce Commerce Cloud (SFCC)",
+        "macOS launchd"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/opensfcc/sandbox-launchd"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/opensfcc/sandbox-launchd/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/opensfcc/sandbox-launchd/commit/a5174d53b993f4e914bcbc8af15bc3600a63afd3"
+        }
+      ],
+      "last_contribution": "2024-05-14",
+      "last_contribution_url": "https://github.com/opensfcc/sandbox-launchd/commit/a5174d53b993f4e914bcbc8af15bc3600a63afd3",
+      "readme_url": "https://github.com/opensfcc/sandbox-launchd/blob/main/README.md",
+      "repository_url": "https://github.com/opensfcc/sandbox-launchd",
+      "github_languages": [
+        "Shell"
+      ],
+      "project_types": [
+        "Automation scripts"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Shell"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Salesforce Commerce Cloud (SFCC)",
+            "macOS launchd"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/opensfcc/sandbox-launchd/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/opensfcc/sandbox-launchd/blob/main/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "macOS launchd",
+          "source": "https://github.com/opensfcc/sandbox-launchd/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/opensfcc"
+    },
+    {
+      "id": "opensfcc/sfcc_developers_core",
+      "name": "sfcc_developers_core",
+      "organization": "opensfcc",
+      "summary": "A Salesforce Commerce Cloud cartridge with tools for debugging storefronts. The repository includes installation instructions and a development workflow for contributors.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "SCSS",
+        "JavaScript",
+        "Vue.js",
+        "Sass",
+        "Node.js",
+        "Mocha",
+        "Webpack",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/opensfcc/sfcc_developers_core"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/opensfcc/sfcc_developers_core/commit/1f5f9829e27c1ab73aedc01ddd6092aa5b540a81"
+        }
+      ],
+      "last_contribution": "2024-05-14",
+      "last_contribution_url": "https://github.com/opensfcc/sfcc_developers_core/commit/1f5f9829e27c1ab73aedc01ddd6092aa5b540a81",
+      "readme_url": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/README.md",
+      "repository_url": "https://github.com/opensfcc/sfcc_developers_core",
+      "github_languages": [
+        "Vue",
+        "SCSS",
+        "JavaScript"
+      ],
+      "project_types": [
+        "Salesforce Commerce Cloud cartridge",
+        "Developer tool"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "SCSS",
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Vue.js",
+            "Sass"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Mocha",
+            "Webpack",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Vue.js",
+          "source": "https://api.github.com/repos/opensfcc/sfcc_developers_core/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "SCSS",
+          "source": "https://api.github.com/repos/opensfcc/sfcc_developers_core/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/opensfcc/sfcc_developers_core/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Mocha",
+          "source": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/package.json",
+          "basis": "Declared dependencies package: mocha"
+        },
+        {
+          "technology": "Vue.js",
+          "source": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/package.json",
+          "basis": "Declared dependencies package: vue"
+        },
+        {
+          "technology": "Sass",
+          "source": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/package.json",
+          "basis": "Declared devDependencies package: node-sass"
+        },
+        {
+          "technology": "Webpack",
+          "source": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/package.json",
+          "basis": "Declared devDependencies package: webpack"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/opensfcc/sfcc_developers_core/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Vue.js",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/opensfcc"
+    },
+    {
+      "id": "manifestinteractive/teleprompter",
+      "name": "teleprompter",
+      "organization": "manifestinteractive",
+      "summary": "A browser teleprompter with editable text, automatic saving, and remote-control support. Keyboard shortcuts adjust scrolling speed and text size during a presentation.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Express",
+        "Socket.IO",
+        "Docker",
+        "Node.js",
+        "Docker Compose"
+      ],
+      "license": "NOASSERTION",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/teleprompter"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/teleprompter/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/teleprompter/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/teleprompter/commit/8c778f505d42b9681ca0f7ebbdacff66cfbfd408"
+        },
+        {
+          "label": "Dockerfile",
+          "url": "https://github.com/manifestinteractive/teleprompter/blob/develop/Dockerfile"
+        },
+        {
+          "label": "docker-compose.yml",
+          "url": "https://github.com/manifestinteractive/teleprompter/blob/develop/docker-compose.yml"
+        }
+      ],
+      "last_contribution": "2023-06-16",
+      "last_contribution_url": "https://github.com/manifestinteractive/teleprompter/commit/8c778f505d42b9681ca0f7ebbdacff66cfbfd408",
+      "readme_url": "https://github.com/manifestinteractive/teleprompter/blob/develop/README.md",
+      "repository_url": "https://github.com/manifestinteractive/teleprompter",
+      "github_languages": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Dockerfile"
+      ],
+      "project_types": [
+        "Web application"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Express",
+            "Socket.IO"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker",
+            "Node.js",
+            "Docker Compose"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/teleprompter/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/manifestinteractive/teleprompter/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/teleprompter/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/manifestinteractive/teleprompter/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/teleprompter/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Express",
+          "source": "https://github.com/manifestinteractive/teleprompter/blob/develop/package.json",
+          "basis": "Declared dependencies package: express"
+        },
+        {
+          "technology": "Socket.IO",
+          "source": "https://github.com/manifestinteractive/teleprompter/blob/develop/package.json",
+          "basis": "Declared dependencies package: socket.io"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/manifestinteractive/teleprompter/blob/develop/Dockerfile",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/manifestinteractive/teleprompter/blob/develop/docker-compose.yml",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker Compose",
+          "source": "https://github.com/manifestinteractive/teleprompter/blob/develop/docker-compose.yml",
+          "basis": "Container configuration"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Docker",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "sfccdevops/accessibility-tester",
+      "name": "accessibility-tester",
+      "organization": "sfccdevops",
+      "summary": "A command-line tool for checking website accessibility and generating reports for developers. It supports CI workflows, page automation, and sites behind HTTP authentication.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "Yargs",
+        "Node.js",
+        "Pa11y",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/accessibility-tester"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/accessibility-tester/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/accessibility-tester/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/accessibility-tester/commit/df8a48844442b5b7517f3b1297cdf7aa6b1eec63"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/accessibility-tester/commit/df8a48844442b5b7517f3b1297cdf7aa6b1eec63",
+      "readme_url": "https://github.com/sfccdevops/accessibility-tester/blob/master/README.md",
+      "repository_url": "https://github.com/sfccdevops/accessibility-tester",
+      "github_languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "project_types": [
+        "Accessibility testing",
+        "CLI tool"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Pa11y",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/accessibility-tester/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/sfccdevops/accessibility-tester/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/accessibility-tester/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Pa11y",
+          "source": "https://github.com/sfccdevops/accessibility-tester/blob/master/package.json",
+          "basis": "Declared dependencies package: pa11y"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/sfccdevops/accessibility-tester/blob/master/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/accessibility-tester/blob/master/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/explorer-exclude-vscode-extension",
+      "name": "explorer-exclude-vscode-extension",
+      "organization": "sfccdevops",
+      "summary": "I created the original Explorer Exclude extension for managing hidden files and folders in VS Code. MadCatPX now maintains it as Explorer Exclude Manager in the same repository.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "VS Code"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/commit/c8324ca8a97da4f28e535b23b3876868d38c5266"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/commit/c8324ca8a97da4f28e535b23b3876868d38c5266",
+      "readme_url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/blob/develop/README.md",
+      "repository_url": "https://github.com/sfccdevops/explorer-exclude-vscode-extension",
+      "github_languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "project_types": [
+        "VS Code extension"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "VS Code"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/explorer-exclude-vscode-extension/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/sfccdevops/explorer-exclude-vscode-extension/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "VS Code",
+          "source": "https://github.com/sfccdevops/explorer-exclude-vscode-extension/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-cartridge-diff",
+      "name": "sfcc-cartridge-diff",
+      "organization": "sfccdevops",
+      "summary": "A command-line tool for comparing Salesforce Commerce Cloud cartridges. It shows differences between override files and can filter results using local Git changes.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Yargs",
+        "Node.js",
+        "Jest",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-diff"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-diff/commit/10763c82a45797e93d0349beeba80180c69a1fab"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-cartridge-diff/commit/10763c82a45797e93d0349beeba80180c69a1fab",
+      "readme_url": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-cartridge-diff",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Jest",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-cartridge-diff/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Jest",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/package.json",
+          "basis": "Declared devDependencies package: jest"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-diff/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-cartridge-overrides-vscode-extension",
+      "name": "sfcc-cartridge-overrides-vscode-extension",
+      "organization": "sfccdevops",
+      "summary": "A VS Code extension for inspecting Salesforce Commerce Cloud cartridge overrides. It follows cartridge order and provides file comparisons across controllers, models, scripts, and templates.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "VS Code",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/commit/275a2953590416065bd8aca3bf27dc4b6227946f"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/commit/275a2953590416065bd8aca3bf27dc4b6227946f",
+      "readme_url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/blob/develop/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension",
+      "github_languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "project_types": [
+        "VS Code extension"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "VS Code",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-cartridge-overrides-vscode-extension/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-cartridge-overrides-vscode-extension/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "VS Code",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/blob/develop/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-cartridge-overrides-vscode-extension/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-catalog-inventory",
+      "name": "sfcc-catalog-inventory",
+      "organization": "sfccdevops",
+      "summary": "A command-line tool that converts Salesforce Commerce Cloud catalog XML into inventory XML, with options for the output file and inventory list name.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Yargs",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-inventory"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-inventory/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-inventory/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-inventory/commit/8cac91acd2bb23f1ab58d70174304edb4f8bf9ce"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-catalog-inventory/commit/8cac91acd2bb23f1ab58d70174304edb4f8bf9ce",
+      "readme_url": "https://github.com/sfccdevops/sfcc-catalog-inventory/blob/main/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-catalog-inventory",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool",
+        "XML conversion"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-catalog-inventory/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-catalog-inventory/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/sfccdevops/sfcc-catalog-inventory/blob/main/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-catalog-inventory/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-catalog-pricebook",
+      "name": "sfcc-catalog-pricebook",
+      "organization": "sfccdevops",
+      "summary": "A command-line tool that generates Salesforce Commerce Cloud pricebook XML from catalog XML. Options control the currency, price range, and pricebook details.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Yargs",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-pricebook"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-pricebook/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-pricebook/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-catalog-pricebook/commit/234a67945d34dc72681f6024ef03f83889ebcbab"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-catalog-pricebook/commit/234a67945d34dc72681f6024ef03f83889ebcbab",
+      "readme_url": "https://github.com/sfccdevops/sfcc-catalog-pricebook/blob/main/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-catalog-pricebook",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool",
+        "XML conversion"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-catalog-pricebook/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-catalog-pricebook/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/sfccdevops/sfcc-catalog-pricebook/blob/main/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-catalog-pricebook/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-cli",
+      "name": "sfcc-cli",
+      "organization": "sfccdevops",
+      "summary": "A command-line development tool for Salesforce Commerce Cloud sandboxes. It manages client configurations, uploads code changes, and provides searchable logs across macOS, Windows, and Linux.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Express",
+        "Yargs",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-cli"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-cli/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-cli/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-cli/commit/f142ec4bf340e6cfcd7d4e60d8e4fdaa2f00a666"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-cli/commit/f142ec4bf340e6cfcd7d4e60d8e4fdaa2f00a666",
+      "readme_url": "https://github.com/sfccdevops/sfcc-cli/blob/master/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-cli",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Express",
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-cli/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-cli/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Express",
+          "source": "https://github.com/sfccdevops/sfcc-cli/blob/master/package.json",
+          "basis": "Declared dependencies package: express"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/sfccdevops/sfcc-cli/blob/master/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-cli/blob/master/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-devtools",
+      "name": "sfcc-devtools",
+      "organization": "sfccdevops",
+      "summary": "A browser extension that connects Salesforce Commerce Cloud page markers to development tools. It opens source files in an editor and content resources in Business Manager.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-devtools"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-devtools/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-devtools/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-devtools/commit/4e055e74102f81cc6657c902f22e116c4545a9c0"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-devtools/commit/4e055e74102f81cc6657c902f22e116c4545a9c0",
+      "readme_url": "https://github.com/sfccdevops/sfcc-devtools/blob/master/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-devtools",
+      "github_languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "project_types": [
+        "Browser extension"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-devtools/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-devtools/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-devtools/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-devtools/blob/master/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "sfccdevops/sfcc-vscode-extension",
+      "name": "sfcc-vscode-extension",
+      "organization": "sfccdevops",
+      "summary": "A VS Code extension that adds shortcuts for Salesforce Commerce Cloud development. It searches documentation and opens content assets or slots in Business Manager from ISML files.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Node.js",
+        "VS Code",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/sfccdevops/sfcc-vscode-extension"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/sfccdevops/sfcc-vscode-extension/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/sfccdevops/sfcc-vscode-extension/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/sfccdevops/sfcc-vscode-extension/commit/bcd7ef321f7736a62ac7e2ddcf15adf6aa0d27d9"
+        }
+      ],
+      "last_contribution": "2023-05-14",
+      "last_contribution_url": "https://github.com/sfccdevops/sfcc-vscode-extension/commit/bcd7ef321f7736a62ac7e2ddcf15adf6aa0d27d9",
+      "readme_url": "https://github.com/sfccdevops/sfcc-vscode-extension/blob/master/README.md",
+      "repository_url": "https://github.com/sfccdevops/sfcc-vscode-extension",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "VS Code extension"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "VS Code",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/sfccdevops/sfcc-vscode-extension/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/sfccdevops/sfcc-vscode-extension/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "VS Code",
+          "source": "https://github.com/sfccdevops/sfcc-vscode-extension/blob/master/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/sfccdevops/sfcc-vscode-extension/blob/master/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/sfccdevops"
+    },
+    {
+      "id": "manifestinteractive/mimic-my-voice",
+      "name": "mimic-my-voice",
+      "organization": "manifestinteractive",
+      "summary": "An unfinished voice-model project combining Mycroft recording tools with Coqui text-to-speech. It includes setup automation and optional backup and restore through Amazon S3.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Shell",
+        "JavaScript",
+        "Yargs",
+        "Coqui TTS",
+        "Mycroft Mimic Recording Studio",
+        "Node.js",
+        "Amazon S3",
+        "Docker"
+      ],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/mimic-my-voice"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/mimic-my-voice/commit/321b48d03ef141985bd99a983b6d8c537a3b2423"
+        }
+      ],
+      "last_contribution": "2021-07-11",
+      "last_contribution_url": "https://github.com/manifestinteractive/mimic-my-voice/commit/321b48d03ef141985bd99a983b6d8c537a3b2423",
+      "readme_url": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/README.md",
+      "repository_url": "https://github.com/manifestinteractive/mimic-my-voice",
+      "github_languages": [
+        "Shell",
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool",
+        "Voice model training"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Shell",
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Yargs"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Coqui TTS",
+            "Mycroft Mimic Recording Studio"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Amazon S3",
+            "Docker"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/manifestinteractive/mimic-my-voice/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/mimic-my-voice/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Amazon S3",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/package.json",
+          "basis": "Declared dependencies package: s3-sync-client"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Coqui TTS",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Mycroft Mimic Recording Studio",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Amazon S3",
+          "source": "https://github.com/manifestinteractive/mimic-my-voice/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js",
+        "Docker"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/dev-team",
+      "name": "dev-team",
+      "organization": "manifestinteractive",
+      "summary": "An overview of a development team's Scrum process, from backlog preparation through deployment. It includes guides for planning, code review, and release workflows.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [],
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/dev-team"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/dev-team/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/dev-team/commit/95f5562607e5063e9e4ccae1e1c86aa964bbaf27"
+        }
+      ],
+      "last_contribution": "2020-09-04",
+      "last_contribution_url": "https://github.com/manifestinteractive/dev-team/commit/95f5562607e5063e9e4ccae1e1c86aa964bbaf27",
+      "readme_url": "https://github.com/manifestinteractive/dev-team/blob/master/README.md",
+      "repository_url": "https://github.com/manifestinteractive/dev-team",
+      "github_languages": [],
+      "project_types": [
+        "Developer guide"
+      ],
+      "technology_groups": [],
+      "technology_evidence": [],
+      "resume_skills": [],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/weather-bar-api",
+      "name": "weather-bar-api",
+      "organization": "manifestinteractive",
+      "summary": "The API behind Weather Bar, a desktop weather application. The project includes server setup and testing documentation. Weather Bar has shut down and is no longer maintained.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "API Blueprint",
+        "Shell",
+        "HTML",
+        "Express",
+        "Yargs",
+        "Elasticsearch",
+        "MySQL",
+        "Redis",
+        "Sequelize",
+        "Docker",
+        "Node.js",
+        "Mocha",
+        "Docker Compose"
+      ],
+      "license": "MIT",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/weather-bar-api"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/weather-bar-api/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/weather-bar-api/commit/96d8dac9d123c85a53dccb43d386618baecd6672"
+        },
+        {
+          "label": "Dockerfile",
+          "url": "https://github.com/manifestinteractive/weather-bar-api/blob/master/Dockerfile"
+        },
+        {
+          "label": "docker-compose.yml",
+          "url": "https://github.com/manifestinteractive/weather-bar-api/blob/master/docker-compose.yml"
+        }
+      ],
+      "last_contribution": "2024-12-21",
+      "last_contribution_url": "https://github.com/manifestinteractive/weather-bar-api/commit/96d8dac9d123c85a53dccb43d386618baecd6672",
+      "readme_url": "https://github.com/manifestinteractive/weather-bar-api/blob/master/README.md",
+      "repository_url": "https://github.com/manifestinteractive/weather-bar-api",
+      "github_languages": [
+        "JavaScript",
+        "CSS",
+        "API Blueprint",
+        "Shell",
+        "HTML",
+        "Dockerfile"
+      ],
+      "project_types": [
+        "API"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "CSS",
+            "API Blueprint",
+            "Shell",
+            "HTML"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Express",
+            "Yargs"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Elasticsearch",
+            "MySQL",
+            "Redis",
+            "Sequelize"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker",
+            "Node.js",
+            "Mocha",
+            "Docker Compose"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "API Blueprint",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-api/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Elasticsearch",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared dependencies package: elasticsearch"
+        },
+        {
+          "technology": "Express",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared dependencies package: express"
+        },
+        {
+          "technology": "MySQL",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared dependencies package: mysql"
+        },
+        {
+          "technology": "Redis",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared dependencies package: redis"
+        },
+        {
+          "technology": "Sequelize",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared dependencies package: sequelize"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Mocha",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/package.json",
+          "basis": "Declared devDependencies package: mocha"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/Dockerfile",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/docker-compose.yml",
+          "basis": "Container configuration"
+        },
+        {
+          "technology": "Docker Compose",
+          "source": "https://github.com/manifestinteractive/weather-bar-api/blob/master/docker-compose.yml",
+          "basis": "Container configuration"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Elasticsearch",
+        "MySQL",
+        "Redis",
+        "Docker",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/weather-bar-app",
+      "name": "weather-bar-app",
+      "organization": "manifestinteractive",
+      "summary": "A desktop weather application that displayed current conditions and forecasts in the menu bar. It supported saved locations and multiple languages. Weather Bar has shut down and is no longer maintained.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "SCSS",
+        "EJS",
+        "Vue.js",
+        "Electron",
+        "Sass",
+        "Node.js",
+        "Mocha",
+        "Webpack"
+      ],
+      "license": "MIT",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/weather-bar-app"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/weather-bar-app/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/weather-bar-app/commit/9ff14805de07d5487877a453e079c7c27e44e50a"
+        }
+      ],
+      "last_contribution": "2024-12-21",
+      "last_contribution_url": "https://github.com/manifestinteractive/weather-bar-app/commit/9ff14805de07d5487877a453e079c7c27e44e50a",
+      "readme_url": "https://github.com/manifestinteractive/weather-bar-app/blob/master/README.md",
+      "repository_url": "https://github.com/manifestinteractive/weather-bar-app",
+      "github_languages": [
+        "Vue",
+        "JavaScript",
+        "CSS",
+        "SCSS",
+        "EJS"
+      ],
+      "project_types": [
+        "Desktop application"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "CSS",
+            "SCSS",
+            "EJS"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Vue.js",
+            "Electron",
+            "Sass"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Mocha",
+            "Webpack"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Vue.js",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-app/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-app/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-app/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "SCSS",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-app/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "EJS",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-app/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Vue.js",
+          "source": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json",
+          "basis": "Declared dependencies package: vue"
+        },
+        {
+          "technology": "Electron",
+          "source": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json",
+          "basis": "Declared devDependencies package: electron"
+        },
+        {
+          "technology": "Mocha",
+          "source": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json",
+          "basis": "Declared devDependencies package: mocha"
+        },
+        {
+          "technology": "Sass",
+          "source": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json",
+          "basis": "Declared devDependencies package: node-sass"
+        },
+        {
+          "technology": "Webpack",
+          "source": "https://github.com/manifestinteractive/weather-bar-app/blob/master/package.json",
+          "basis": "Declared devDependencies package: webpack"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "CSS",
+        "Vue.js",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "opensfcc/sfcc-docs",
+      "name": "sfcc-docs",
+      "organization": "opensfcc",
+      "summary": "An unofficial Salesforce Commerce Cloud documentation site built with Next.js. It includes a searchable index and uses the Tailwind UI Syntax template.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "Shell",
+        "Headless UI",
+        "Markdoc",
+        "FlexSearch",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Cheerio",
+        "Yargs",
+        "Docker",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "license": "MIT",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/opensfcc/sfcc-docs"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/opensfcc/sfcc-docs/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/opensfcc/sfcc-docs/commit/574ef737bd8386e58f39707192e8cea31de25962"
+        }
+      ],
+      "last_contribution": "2024-05-14",
+      "last_contribution_url": "https://github.com/opensfcc/sfcc-docs/commit/574ef737bd8386e58f39707192e8cea31de25962",
+      "readme_url": "https://github.com/opensfcc/sfcc-docs/blob/develop/README.md",
+      "repository_url": "https://github.com/opensfcc/sfcc-docs",
+      "license_note": "The README identifies a separate Tailwind UI license for the site template.",
+      "github_languages": [
+        "JavaScript",
+        "CSS",
+        "Shell",
+        "Dockerfile"
+      ],
+      "project_types": [
+        "Documentation website",
+        "CLI tool"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "CSS",
+            "Shell"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Headless UI",
+            "Markdoc",
+            "FlexSearch",
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "Cheerio",
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker",
+            "Node.js",
+            "Salesforce Commerce Cloud (SFCC)"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/opensfcc/sfcc-docs/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/opensfcc/sfcc-docs/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/opensfcc/sfcc-docs/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/opensfcc/sfcc-docs/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Headless UI",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared dependencies package: @headlessui/react"
+        },
+        {
+          "technology": "Markdoc",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared dependencies package: @markdoc/markdoc"
+        },
+        {
+          "technology": "FlexSearch",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared dependencies package: flexsearch"
+        },
+        {
+          "technology": "Next.js",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared dependencies package: next"
+        },
+        {
+          "technology": "React",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared dependencies package: react"
+        },
+        {
+          "technology": "Tailwind CSS",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared dependencies package: tailwindcss"
+        },
+        {
+          "technology": "Cheerio",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared devDependencies package: cheerio"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/package.json",
+          "basis": "Declared devDependencies package: yargs"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/README.md",
+          "basis": "Documented in README"
+        },
+        {
+          "technology": "Salesforce Commerce Cloud (SFCC)",
+          "source": "https://github.com/opensfcc/sfcc-docs/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "CSS",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Docker",
+        "Node.js",
+        "Salesforce Commerce Cloud (SFCC)"
+      ],
+      "organization_url": "https://github.com/opensfcc"
+    },
+    {
+      "id": "findbycolor/color-calibration-card",
+      "name": "color-calibration-card",
+      "organization": "FindByColor",
+      "summary": "Artwork and reference material for the Find By Color calibration card, including color values and AR tracking markers.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "AR.js"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/color-calibration-card"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/color-calibration-card/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/color-calibration-card/commit/0fc9841d2396b10666cc11c4f14df69d2f4e6c73"
+        }
+      ],
+      "last_contribution": "2023-07-17",
+      "last_contribution_url": "https://github.com/FindByColor/color-calibration-card/commit/0fc9841d2396b10666cc11c4f14df69d2f4e6c73",
+      "readme_url": "https://github.com/FindByColor/color-calibration-card/blob/main/README.md",
+      "repository_url": "https://github.com/FindByColor/color-calibration-card",
+      "github_languages": [],
+      "project_types": [
+        "Design assets"
+      ],
+      "technology_groups": [
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "AR.js"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "AR.js",
+          "source": "https://github.com/FindByColor/color-calibration-card/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/ar-marker-creator",
+      "name": "ar-marker-creator",
+      "organization": "FindByColor",
+      "summary": "A tool that converts the Find By Color calibration card into an AR Toolkit marker. The generated files let AR web applications recognize the card through a camera.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "ImageMagick",
+        "AR Toolkit",
+        "Node.js"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/ar-marker-creator"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/FindByColor/ar-marker-creator/blob/main/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/ar-marker-creator/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/ar-marker-creator/commit/6f0b4a1af90d137a758b66e25bda158e7cb17374"
+        }
+      ],
+      "last_contribution": "2023-07-16",
+      "last_contribution_url": "https://github.com/FindByColor/ar-marker-creator/commit/6f0b4a1af90d137a758b66e25bda158e7cb17374",
+      "readme_url": "https://github.com/FindByColor/ar-marker-creator/blob/main/README.md",
+      "repository_url": "https://github.com/FindByColor/ar-marker-creator",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool",
+        "Augmented reality"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "ImageMagick",
+            "AR Toolkit"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/FindByColor/ar-marker-creator/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/FindByColor/ar-marker-creator/blob/main/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "ImageMagick",
+          "source": "https://github.com/FindByColor/ar-marker-creator/blob/main/package.json",
+          "basis": "Declared dependencies package: imagemagick"
+        },
+        {
+          "technology": "AR Toolkit",
+          "source": "https://github.com/FindByColor/ar-marker-creator/blob/main/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/color-library-visualizer",
+      "name": "color-library-visualizer",
+      "organization": "FindByColor",
+      "summary": "A visual tool for exploring Find By Color libraries across different color models.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/color-library-visualizer"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/color-library-visualizer/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/color-library-visualizer/commit/7b99093c65f226b8f22b1c67822175c2802b0013"
+        }
+      ],
+      "last_contribution": "2023-07-11",
+      "last_contribution_url": "https://github.com/FindByColor/color-library-visualizer/commit/7b99093c65f226b8f22b1c67822175c2802b0013",
+      "readme_url": "https://github.com/FindByColor/color-library-visualizer/blob/main/README.md",
+      "repository_url": "https://github.com/FindByColor/color-library-visualizer",
+      "github_languages": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "project_types": [
+        "Web application",
+        "Data visualization"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/FindByColor/color-library-visualizer/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/FindByColor/color-library-visualizer/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/FindByColor/color-library-visualizer/languages",
+          "basis": "GitHub language inventory"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/model-oid-seg",
+      "name": "model-oid-seg",
+      "organization": "FindByColor",
+      "summary": "A training tool that downloads Open Images assets and prepares them for YOLOv8. It produces custom image-segmentation models.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Python",
+        "Shell",
+        "ClearML",
+        "OpenCV",
+        "TensorBoard",
+        "PyTorch",
+        "YOLOv8",
+        "Docker",
+        "AWS SDK for Python"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/model-oid-seg"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/model-oid-seg/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/model-oid-seg/commit/f6b438e2a9b226f757acb04931bd44b35f66c18e"
+        },
+        {
+          "label": "requirements.txt",
+          "url": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt"
+        },
+        {
+          "label": "Dockerfile",
+          "url": "https://github.com/FindByColor/model-oid-seg/blob/develop/Dockerfile"
+        }
+      ],
+      "last_contribution": "2023-07-05",
+      "last_contribution_url": "https://github.com/FindByColor/model-oid-seg/commit/f6b438e2a9b226f757acb04931bd44b35f66c18e",
+      "readme_url": "https://github.com/FindByColor/model-oid-seg/blob/develop/README.md",
+      "repository_url": "https://github.com/FindByColor/model-oid-seg",
+      "github_languages": [
+        "Python",
+        "Shell",
+        "Dockerfile"
+      ],
+      "project_types": [
+        "Machine learning training tool"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Python",
+            "Shell"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "ClearML",
+            "OpenCV",
+            "TensorBoard",
+            "PyTorch",
+            "YOLOv8"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker",
+            "AWS SDK for Python"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Python",
+          "source": "https://api.github.com/repos/FindByColor/model-oid-seg/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/FindByColor/model-oid-seg/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/FindByColor/model-oid-seg/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "AWS SDK for Python",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: boto3"
+        },
+        {
+          "technology": "ClearML",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: clearml"
+        },
+        {
+          "technology": "OpenCV",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: opencv-python"
+        },
+        {
+          "technology": "TensorBoard",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: tensorboard"
+        },
+        {
+          "technology": "PyTorch",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: torch"
+        },
+        {
+          "technology": "YOLOv8",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: ultralytics"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/FindByColor/model-oid-seg/blob/develop/Dockerfile",
+          "basis": "Container configuration"
+        }
+      ],
+      "resume_skills": [
+        "Python",
+        "Docker"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/image-processor",
+      "name": "image-processor",
+      "organization": "FindByColor",
+      "summary": "An image-processing project for Find By Color with a web application and command-line interface. Its documentation covers local and container-based development.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "Python",
+        "Shell",
+        "CSS",
+        "Streamlit",
+        "Albumentations",
+        "Matplotlib",
+        "NumPy",
+        "OpenCV",
+        "Pillow",
+        "PyTorch",
+        "Torchvision",
+        "Docker"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/image-processor"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/image-processor/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/image-processor/commit/4410171075427772833d1b5ca68a31bc2ad3758b"
+        },
+        {
+          "label": "requirements.txt",
+          "url": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt"
+        },
+        {
+          "label": "Dockerfile",
+          "url": "https://github.com/FindByColor/image-processor/blob/develop/Dockerfile"
+        }
+      ],
+      "last_contribution": "2023-05-16",
+      "last_contribution_url": "https://github.com/FindByColor/image-processor/commit/4410171075427772833d1b5ca68a31bc2ad3758b",
+      "readme_url": "https://github.com/FindByColor/image-processor/blob/develop/README.md",
+      "repository_url": "https://github.com/FindByColor/image-processor",
+      "github_languages": [
+        "Python",
+        "Shell",
+        "Dockerfile",
+        "CSS"
+      ],
+      "project_types": [
+        "Web application",
+        "CLI tool",
+        "Image processing"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "Python",
+            "Shell",
+            "CSS"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Streamlit"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Albumentations",
+            "Matplotlib",
+            "NumPy",
+            "OpenCV",
+            "Pillow",
+            "PyTorch",
+            "Torchvision"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Docker"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "Python",
+          "source": "https://api.github.com/repos/FindByColor/image-processor/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Shell",
+          "source": "https://api.github.com/repos/FindByColor/image-processor/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://api.github.com/repos/FindByColor/image-processor/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/FindByColor/image-processor/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Albumentations",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: albumentations"
+        },
+        {
+          "technology": "Matplotlib",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: matplotlib"
+        },
+        {
+          "technology": "NumPy",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: numpy"
+        },
+        {
+          "technology": "OpenCV",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: opencv-python-headless"
+        },
+        {
+          "technology": "Pillow",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: pillow"
+        },
+        {
+          "technology": "Streamlit",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: streamlit"
+        },
+        {
+          "technology": "PyTorch",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: torch"
+        },
+        {
+          "technology": "Torchvision",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/requirements.txt",
+          "basis": "Declared Python requirement: torchvision"
+        },
+        {
+          "technology": "Docker",
+          "source": "https://github.com/FindByColor/image-processor/blob/develop/Dockerfile",
+          "basis": "Container configuration"
+        }
+      ],
+      "resume_skills": [
+        "Python",
+        "CSS",
+        "Docker"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "manifestinteractive/analytics-debug-panel",
+      "name": "analytics-debug-panel",
+      "organization": "manifestinteractive",
+      "summary": "A browser extension for inspecting and filtering analytics requests in developer tools. It supports Adobe, Google, and Facebook analytics traffic.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "SCSS",
+        "EJS",
+        "Vue.js",
+        "Sass",
+        "Node.js",
+        "Webpack"
+      ],
+      "license": "MIT",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/analytics-debug-panel"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/analytics-debug-panel/commit/56ccf6735703808f0b385ec2da4083914f28399c"
+        }
+      ],
+      "last_contribution": "2023-01-16",
+      "last_contribution_url": "https://github.com/manifestinteractive/analytics-debug-panel/commit/56ccf6735703808f0b385ec2da4083914f28399c",
+      "readme_url": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/README.md",
+      "repository_url": "https://github.com/manifestinteractive/analytics-debug-panel",
+      "github_languages": [
+        "JavaScript",
+        "Vue",
+        "SCSS",
+        "EJS"
+      ],
+      "project_types": [
+        "Browser extension"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "SCSS",
+            "EJS"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Vue.js",
+            "Sass"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Webpack"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/analytics-debug-panel/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Vue.js",
+          "source": "https://api.github.com/repos/manifestinteractive/analytics-debug-panel/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "SCSS",
+          "source": "https://api.github.com/repos/manifestinteractive/analytics-debug-panel/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "EJS",
+          "source": "https://api.github.com/repos/manifestinteractive/analytics-debug-panel/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Vue.js",
+          "source": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/package.json",
+          "basis": "Declared dependencies package: vue"
+        },
+        {
+          "technology": "Sass",
+          "source": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/package.json",
+          "basis": "Declared devDependencies package: node-sass"
+        },
+        {
+          "technology": "Webpack",
+          "source": "https://github.com/manifestinteractive/analytics-debug-panel/blob/master/package.json",
+          "basis": "Declared devDependencies package: webpack"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Vue.js",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "manifestinteractive/weather-bar-website",
+      "name": "weather-bar-website",
+      "organization": "manifestinteractive",
+      "summary": "The website repository for Weather Bar, the desktop weather application.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "license": "MIT",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/manifestinteractive/weather-bar-website"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/manifestinteractive/weather-bar-website/blob/master/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/manifestinteractive/weather-bar-website/commit/7c4b467834a66ce18e26ce0e63574a288cd5b5e7"
+        }
+      ],
+      "last_contribution": "2023-01-16",
+      "last_contribution_url": "https://github.com/manifestinteractive/weather-bar-website/commit/7c4b467834a66ce18e26ce0e63574a288cd5b5e7",
+      "readme_url": "https://github.com/manifestinteractive/weather-bar-website/blob/master/README.md",
+      "repository_url": "https://github.com/manifestinteractive/weather-bar-website",
+      "github_languages": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "project_types": [
+        "Website"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "CSS",
+            "HTML",
+            "JavaScript"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "CSS",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-website/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-website/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/manifestinteractive/weather-bar-website/languages",
+          "basis": "GitHub language inventory"
+        }
+      ],
+      "resume_skills": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "organization_url": "https://github.com/manifestinteractive"
+    },
+    {
+      "id": "findbycolor/color-library",
+      "name": "color-library",
+      "organization": "FindByColor",
+      "summary": "An internal tool for generating industry color libraries, with documentation for data definitions and development workflows.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Cheerio",
+        "Yargs",
+        "Node.js",
+        "Mocha"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/color-library"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/FindByColor/color-library/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/color-library/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/color-library/commit/8c36677c2dcf9798206562dc2dc8621e0fd0cc68"
+        }
+      ],
+      "last_contribution": "2021-11-20",
+      "last_contribution_url": "https://github.com/FindByColor/color-library/commit/8c36677c2dcf9798206562dc2dc8621e0fd0cc68",
+      "readme_url": "https://github.com/FindByColor/color-library/blob/develop/README.md",
+      "repository_url": "https://github.com/FindByColor/color-library",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool",
+        "Data processing"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Cheerio",
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Mocha"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/FindByColor/color-library/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/FindByColor/color-library/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Cheerio",
+          "source": "https://github.com/FindByColor/color-library/blob/develop/package.json",
+          "basis": "Declared dependencies package: cheerio"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/FindByColor/color-library/blob/develop/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Mocha",
+          "source": "https://github.com/FindByColor/color-library/blob/develop/package.json",
+          "basis": "Declared devDependencies package: mocha"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/orm-schema",
+      "name": "orm-schema",
+      "organization": "FindByColor",
+      "summary": "A visual database-modeling project for Find By Color. It uses Meteor Modeler to maintain a relational schema and generate JavaScript API modules.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "Meteor Modeler",
+        "Node.js"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/orm-schema"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/FindByColor/orm-schema/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/orm-schema/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/orm-schema/commit/c244a5d17f2c66cdb7160f78f96eb009aa4e6c16"
+        }
+      ],
+      "last_contribution": "2021-11-10",
+      "last_contribution_url": "https://github.com/FindByColor/orm-schema/commit/c244a5d17f2c66cdb7160f78f96eb009aa4e6c16",
+      "readme_url": "https://github.com/FindByColor/orm-schema/blob/develop/README.md",
+      "repository_url": "https://github.com/FindByColor/orm-schema",
+      "github_languages": [
+        "JavaScript"
+      ],
+      "project_types": [
+        "Database modeling"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "AI and data",
+          "items": [
+            "Meteor Modeler"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/FindByColor/orm-schema/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/FindByColor/orm-schema/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Meteor Modeler",
+          "source": "https://github.com/FindByColor/orm-schema/blob/develop/README.md",
+          "basis": "Documented in README"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/color-calibration-camera",
+      "name": "color-calibration-camera",
+      "organization": "FindByColor",
+      "summary": "An early camera-based proof of concept for the Find By Color calibration card, with reference images for testing.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "SCSS"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/color-calibration-camera"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/color-calibration-camera/blob/main/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/color-calibration-camera/commit/33935e0843e6c6b74538f265329f000c64b6d332"
+        }
+      ],
+      "last_contribution": "2021-10-31",
+      "last_contribution_url": "https://github.com/FindByColor/color-calibration-camera/commit/33935e0843e6c6b74538f265329f000c64b6d332",
+      "readme_url": "https://github.com/FindByColor/color-calibration-camera/blob/main/README.md",
+      "repository_url": "https://github.com/FindByColor/color-calibration-camera",
+      "github_languages": [
+        "JavaScript",
+        "HTML",
+        "SCSS"
+      ],
+      "project_types": [
+        "Web application",
+        "Proof of concept"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "JavaScript",
+            "HTML",
+            "SCSS"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/FindByColor/color-calibration-camera/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/FindByColor/color-calibration-camera/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "SCSS",
+          "source": "https://api.github.com/repos/FindByColor/color-calibration-camera/languages",
+          "basis": "GitHub language inventory"
+        }
+      ],
+      "resume_skills": [
+        "JavaScript",
+        "HTML"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    },
+    {
+      "id": "findbycolor/microdata-extractor",
+      "name": "microdata-extractor",
+      "organization": "FindByColor",
+      "summary": "A Node.js web crawler for extracting microdata from web pages, with setup and usage documentation.",
+      "contribution_evidence": "Public commit attributed to manifestinteractive",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "Cheerio",
+        "Yargs",
+        "Node.js",
+        "Mocha"
+      ],
+      "license": "Not verified",
+      "archived": true,
+      "fork": false,
+      "sources": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/FindByColor/microdata-extractor"
+        },
+        {
+          "label": "Package manifest",
+          "url": "https://github.com/FindByColor/microdata-extractor/blob/develop/package.json"
+        },
+        {
+          "label": "README",
+          "url": "https://github.com/FindByColor/microdata-extractor/blob/develop/README.md"
+        },
+        {
+          "label": "Last contribution",
+          "url": "https://github.com/FindByColor/microdata-extractor/commit/73e2bd3086c340c96f0b5345470f9ced9bebfd14"
+        }
+      ],
+      "last_contribution": "2021-10-18",
+      "last_contribution_url": "https://github.com/FindByColor/microdata-extractor/commit/73e2bd3086c340c96f0b5345470f9ced9bebfd14",
+      "readme_url": "https://github.com/FindByColor/microdata-extractor/blob/develop/README.md",
+      "repository_url": "https://github.com/FindByColor/microdata-extractor",
+      "github_languages": [
+        "HTML",
+        "JavaScript"
+      ],
+      "project_types": [
+        "CLI tool",
+        "Web crawler"
+      ],
+      "technology_groups": [
+        {
+          "category": "Languages",
+          "items": [
+            "HTML",
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Frameworks and libraries",
+          "items": [
+            "Cheerio",
+            "Yargs"
+          ]
+        },
+        {
+          "category": "Tools and platforms",
+          "items": [
+            "Node.js",
+            "Mocha"
+          ]
+        }
+      ],
+      "technology_evidence": [
+        {
+          "technology": "HTML",
+          "source": "https://api.github.com/repos/FindByColor/microdata-extractor/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "JavaScript",
+          "source": "https://api.github.com/repos/FindByColor/microdata-extractor/languages",
+          "basis": "GitHub language inventory"
+        },
+        {
+          "technology": "Node.js",
+          "source": "https://github.com/FindByColor/microdata-extractor/blob/develop/package.json",
+          "basis": "JavaScript package and development tooling; not necessarily the application server"
+        },
+        {
+          "technology": "Cheerio",
+          "source": "https://github.com/FindByColor/microdata-extractor/blob/develop/package.json",
+          "basis": "Declared dependencies package: cheerio"
+        },
+        {
+          "technology": "Yargs",
+          "source": "https://github.com/FindByColor/microdata-extractor/blob/develop/package.json",
+          "basis": "Declared dependencies package: yargs"
+        },
+        {
+          "technology": "Mocha",
+          "source": "https://github.com/FindByColor/microdata-extractor/blob/develop/package.json",
+          "basis": "Declared devDependencies package: mocha"
+        }
+      ],
+      "resume_skills": [
+        "HTML",
+        "JavaScript",
+        "Node.js"
+      ],
+      "organization_url": "https://github.com/FindByColor"
+    }
+  ]
+}
